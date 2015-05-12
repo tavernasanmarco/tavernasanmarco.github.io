@@ -6,9 +6,6 @@ gem 'middleman', '~>3.3.7'
 gem 'bourbon'
 gem 'neat'
 
-# Deploy github pages
-gem 'middleman-deploy', '~> 1.0'
-
 # Live-reloading plugin
 gem 'middleman-livereload', '~> 3.1.0'
 
@@ -17,3 +14,9 @@ gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
 
 # Windows does not come with time zone data
 gem 'tzinfo-data', platforms: [:mswin, :mingw]
+
+# github project pages deploy
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.build_before = true # default: false
+end
