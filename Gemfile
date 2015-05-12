@@ -14,11 +14,3 @@ gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
 
 # Windows does not come with time zone data
 gem 'tzinfo-data', platforms: [:mswin, :mingw]
-
-# github deploy
-activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.build_before = true
-  deploy.branch   = "master"
-  deploy.remote   = "git@github.com:tavernasanmarco/tavernasanmarco.github.io.git"
-end
