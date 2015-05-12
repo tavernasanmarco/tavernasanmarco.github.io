@@ -1,0 +1,214 @@
+.hero
+  background: url('/images/hero-1.jpg') no-repeat
+  background-size: cover
+  min-height: rem(214)
+  height: rem(340)
+  width: 100%
+  display: table
+  +transition(all 2s ease-in-out)
+  +media($medium)
+    height: auto
+    min-height: 90vh
+  article
+    display: table-cell
+    vertical-align: top
+    height: 100%
+    width: 100%
+    text-align: center
+    position: relative
+    +media($medium)
+      vertical-align: middle
+    > img
+      max-width: rem(516)
+      width: 100%
+      +media($medium)
+        margin-bottom: rem(180)
+    .ticker
+      position: absolute
+      bottom: 0
+
+.arrow-container
+  display: none
+  +media($medium)
+    display: block
+    position: absolute
+    height: auto
+    width: 100%
+    left: -50%
+    bottom: rem(160)
+    img
+      width: rem(52)
+      height: rem(51)
+      position: relative
+      left: 50%
+
+.ticker
+  min-height: rem(84)
+  width: 100%
+  background: white
+  color: black
+  display: table
+  font:
+    size: rem(14)
+    family: 'Sentinel', serif
+    weight: 700
+  line-height: rem(18)
+  padding: 0 rem(30)
+  span
+    display: table-cell
+    vertical-align: middle
+    height: auto
+    width: 100%
+  a
+    color: black
+    display: inline-block
+    margin-left: rem(5)
+
+
+.togo
+  background: url('/images/russell-bg.jpg')  no-repeat
+  background-size: cover
+  height: rem(214)
+  min-height: 100%
+  width: 100%
+  position: relative
+  background-position: 70% 100%
+  background-size: cover
+  +media($medium)
+    background-position: auto
+    height: rem(768)
+  aside
+    text-align: center
+    padding: rem(30)
+    display: table
+    width: 100%
+    height: rem(214)
+    +media($medium)
+      text-align: left
+      width: rem(430)
+      height: auto
+      display: block
+      height: auto
+    img
+      margin: rem(40) auto
+      height: rem(77)
+      display: table-cell
+      vertical-align: middle
+      +media($medium)
+        height: rem(235)
+        margin: rem(30) 0 0 0
+  article
+    +media($medium)
+      // padding-left: rem(250)
+      box-sizing: border-box
+      position: relative
+      height: rem(460)
+    .cta
+      position: absolute
+      bottom: rem(-60)
+      margin-left: rem(250)
+
+.private-dining
+  background: url('/images/private-dining-bg.jpg')  no-repeat
+  position: relative
+  background-size: cover
+  height: rem(206)
+  +media($medium)
+    height: rem(768)
+  h2
+    font-size: rem(36)
+    margin: 0 auto
+    line-height: normal
+    padding: 0
+    float: none
+    vertical-align: middle
+    text-align: center
+    height: rem(207)
+    display: table-cell
+    +media($medium)
+      text-align: left
+      font-size: rem(120)
+      line-height: rem(118)
+      margin: 0
+      float: right
+      padding: rem(100) 0 0 0
+      height: auto
+      display: block
+  aside
+    +clearfix
+    padding: 0
+    display: table
+    width: 100%
+    height: rem(207)
+    +media($medium)
+      width: 100%
+      height: auto
+      padding: 0 rem(30)
+      display: block
+  article
+    +media($medium)
+      padding-left: 0
+    .cta
+      position: absolute
+      bottom: rem(-100)
+
+.cta
+  background: white
+  border-radius: 50%
+  width: rem(396)
+  height: rem(396)
+  text-align: center
+  display: block
+  margin-left: none
+  +media($medium)
+    display: table
+  .content
+    display: table-cell
+    vertical-align: middle
+    height: 100%
+    width: 100%
+    padding-bottom: rem(50)
+    box-sizing: border-box
+    a
+      font:
+        size: rem(16)
+        family: 'Gotham', sans-serif
+        weight: 700
+      color: black
+      text-decoration: none
+      text-transform: uppercase
+
+.opentable
+  background: $nude
+  position: relative
+  h2
+    margin: 0
+
+.right-caret
+  display: inline-block
+  background: url('/images/right-caret.png') no-repeat
+  width: rem(14)
+  height: rem(14)
+  margin-left: rem(5)
+  background-size: contain
+
+.hide-large
+  .cta
+    width: 100%
+    text-align: center
+    border-radius: 0
+    height: auto
+    .content
+      margin: 0 auto
+      display: block
+      padding-bottom: rem(20)
+  +media($medium)
+    display: none
+
+.hide-small
+  display: none
+  +media($medium)
+    display: block
+
+.text-right
+  text-align: right

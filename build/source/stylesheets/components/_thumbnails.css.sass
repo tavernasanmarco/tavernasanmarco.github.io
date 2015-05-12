@@ -1,0 +1,33 @@
+.thumbs
+  .thumb
+    text-align: center
+    position: relative
+    display: inline-block
+    width: rem(136)
+    height: rem(136)
+    +media($medium)
+      width: rem(290)
+      height: rem(290)
+    &:hover img
+      border-color: black
+    span
+      display: block
+      font:
+        size: rem(30)
+        family: 'Sentinel', serif
+        weight: 700
+      color: white
+      position: absolute
+      line-height: rem(136)
+      text-align: center
+      width: 100%
+      +media($medium)
+        font:
+          size: rem(68)
+        line-height: rem(290)
+    img
+      width: 100%
+      height: auto
+      border: rem(2) solid white
+      border-radius: 50%
+      +transition(all 0.5s ease-in-out)

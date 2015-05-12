@@ -1,0 +1,76 @@
+footer#footer
+  background: $black
+  position: relative
+  color: white
+  padding: rem(30)
+  +media($medium)
+    padding: rem(100) rem(30)
+  section
+    +outer-container
+    font:
+      size: rem(20)
+    line-height: rem(34)
+    +media($medium)
+      font-size: rem(28)
+  article
+    +media($medium)
+      +span-columns(6)
+    a
+      color: white
+      text-decoration: none
+      display: inline-block
+      &.circle-btn
+        color: black
+  h4
+    color: $yellow
+  dl
+    dt
+      font:
+        size: rem(14)
+        family: 'Gotham', sans-serif
+        weight: 700
+      text-transform: uppercase
+    dd
+      margin: 0 0 rem(30) 0
+    a
+      color: white
+      text-decoration: none
+  .week
+    display: inline-block
+    width: 100%
+    border: rem(2) solid white
+    max-width: rem(400)
+    padding: rem(25) rem(50)
+    box-sizing: border-box
+    dl
+      dt, dd
+        display: inline-block
+      dt
+        font:
+          size: rem(20)
+          family: 'Gotham', serif
+          weight: 700
+        text-align: right
+        min-width: rem(129)
+      dd
+        font:
+          family: 'Sentinel', serif
+          size: rem(22)
+          weight: 300
+        text-align: right
+        margin: 0 0 rem(0) rem(30)
+
+  figure
+    max-width: rem(400)
+    height: auto
+    border: rem(2) solid white
+    margin-top: rem(30)
+    img
+      width: 100%
+    &.footer-logo
+      border: none
+      max-width: rem(344)
+      height: auto
+      margin-top: rem(60)
+  .circle-btn
+    margin-right: rem(30)

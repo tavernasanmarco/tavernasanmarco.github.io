@@ -1,0 +1,46 @@
+.pdr
+  @extend .togo
+  background: url('/images/private-dining-bg.jpg')  no-repeat
+  position: relative
+  background-size: cover
+  max-height: rem(612)
+  width: 100%
+  h2
+    font-size: rem(60)
+    margin: 0
+    line-height: rem(60)
+    padding: rem(30) 0
+    float: left
+    text-align: left
+    +media($medium)
+      font-size: rem(120)
+      padding: rem(100) 0 0 0
+      line-height: rem(118)
+
+.instagram
+  .circle-btn
+    background: $yellow
+    color: white
+    margin-right: rem(15)
+  p
+    font:
+      family: 'Gotham', sans-serif
+      weight: 700
+      size: rem(18)
+    line-height: rem(57)
+    color: black
+    text-transform: uppercase
+    width: auto
+    margin-bottom: rem(30)
+    a
+      color: $yellow
+      text-decoration: none
+
+#instafeed
+  a
+    +span-columns(3)
+    margin-right: 0
+    padding: 0 rem(10)
+    margin-bottom: rem(15)
+    img
+      width: 100%

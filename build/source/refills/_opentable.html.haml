@@ -1,0 +1,14 @@
+%section.opentable
+  .hide-large
+    = link_to 'Make a reservation with OpenTable', 'http://www.opentable.com/taverna-reservations-jacksonville?rtype=ism&restref=33580', target: '_blank'
+  %article
+    %h2 Visit
+    %p We gladly accept  walk-ins but encourage reservations for faster seating.
+    #OT_searchWrapperAll
+      %link{:href => "https://secure.opentable.com/ism/feed_transparent_horizontal.css", :rel => "stylesheet", :type => "text/css"}/
+      %script{:src => "https://secure.opentable.com/ism/default.aspx?rid=33580&restref=33580&mode=horiz-transparent-black", :type => "text/javascript"}
+      %noscript#OT_noscript
+        %a{:href => "http://www.opentable.com/taverna-reservations-jacksonville?rtype=ism&restref=33580"} Reserve Now On OpenTable.com
+
+:javascript
+  $('<input type="submit" class="OT_TableButton" id="submit" value="Find a Table" name="submit" border="0" src="https://secure.opentable.com/img/buttons/btn_findatableNew.png">').appendTo( $('#OT_submitWrap') );
