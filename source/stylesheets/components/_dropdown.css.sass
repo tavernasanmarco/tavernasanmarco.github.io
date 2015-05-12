@@ -1,0 +1,35 @@
+.ui.dropdown
+  .menu
+    background: black
+    border: none
+    border-radius: rem(3)
+    padding: rem(10) rem(20)
+    min-width: rem(164)
+    margin-top: rem(10)
+    right: 0
+    left: auto
+    &:before
+      content: ''
+      width: 0
+      height: 0
+      border-left: rem(5) solid transparent
+      border-right: rem(5) solid transparent
+      border-bottom: rem(5) solid black
+      position: absolute
+      right: rem(10)
+      top: rem(-5)
+    .item
+      padding: rem(10) 0
+      +clearfix
+      a
+        color: $yellow
+        line-height: normal
+        height: auto
+        display: block
+        font:
+          family: 'Gotham'
+          size: rem(14)
+          weight: 700
+        text-transform: uppercase
+        &:hover
+          color: white

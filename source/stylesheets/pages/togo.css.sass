@@ -1,0 +1,27 @@
+.togo-banner
+  background: url('/images/togo-banner-bg.jpg')  no-repeat
+  position: relative
+  background-size: cover
+  max-height: rem(612)
+  width: 100%
+  h2
+    font-size: rem(120)
+    margin: 0
+    line-height: rem(118)
+    padding: rem(100) 0 0 0
+    float: left
+  aside
+    +media($medium)
+      width: 100%
+      height: auto
+      +clearfix
+  article
+    +media($medium)
+      padding-left: 0
+      .cta
+        right: 0
+        background: $nude
+        .content
+          padding: rem(60)
+          box-sizing: border-box
+          vertical-align: top

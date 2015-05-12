@@ -1,0 +1,262 @@
+= partial 'refills/nav'
+
+%section.brunch
+  .wrapper
+    %aside
+      %h2
+        Brunch
+    %article
+
+%section.main-content
+  .wrapper
+    %article
+      %figure
+        %table.menu
+          %thead
+            %th{colspan: '2'} Starters
+          %tbody
+            %tr
+              %td
+                %h5
+                  PROSCIUTTO SCONE
+                %p prosciutto, gruyere, rosemary
+              %td
+                2
+              %tr
+                %td
+                  %h5
+                    BANANA BREAD
+                  %p seasonal jam, honey butter
+                %td
+                  2
+              %tr
+                %td
+                  %h5
+                    PASTRY SPECIAL
+                  %p please see your server
+                %td
+                  2
+              %tr
+                %td
+                  %h5
+                    BASKET OF PASTRIES
+                  %p
+                    assorted pastries, house-made jam, honey butter
+                %td
+                  8
+              %tr
+                %td
+                  %h5
+                    SWEET POTATO EMPANADA
+                  %p butter pecan sauce, maple whipped cream
+                %td
+                  8
+              %tr
+                %td
+                  %h5
+                    1/2 BRULÉED GRAPEFRUIT
+                    %span GF
+                  %p Florida grapefruit, demerrara sugar, mint
+                %td
+                  3
+
+        %table.menu
+          %thead
+            %th{colspan: '2'}
+              Sides
+          %tbody
+            %tr
+              %td
+                %h5
+                  FRUIT SALAD
+                  %span GF
+                %p
+                  assorted seasonal fruit
+              %td
+                3
+              %tr
+                %td
+                  %h5
+                    BACON
+                    %span GF
+                  %p applewood smoked
+                %td
+                  3
+              %tr
+                %td
+                  %h5
+                    Eggs
+                    %span GF
+                  %p two eggs cooked any style
+                %td
+                  3
+              %tr
+                %td
+                  %h5
+                    Toast
+                  %p grilled ciabatta bread
+                %td
+                  2
+              %tr
+                %td
+                  %h5
+                    PATATAS BRAVAS
+                    %span GF
+                  %p fried fingerling potatoes, spicy paprika, aioli
+                %td
+                  6
+
+      %figure
+        %table.menu
+          %thead
+            %th{colspan: '2'} Entrées
+          %tbody
+            %tr
+              %td
+                %h5
+                  LEMON - RICOTTA PANCAKES
+                %p
+                  fresh strawberries, whipped cream, 100% pure maple syrup
+              %td
+                12
+              %tr
+                %td
+                  %h5
+                    EGG CREPE
+                  %p gruyere, mushroom, spinach
+                %td
+                  11
+              %tr
+                %td
+                  %h5
+                    BREAKFAST PIZZA
+                  %p
+                    build your own - eggs + choose up to 3 toppings: mushrooms, onions, spinach, tomatoes, bacon, prosciutto, soppresatta, peppers, mozzarella, fontina, gruyere, cheddar, goat cheese
+                    %br
+                    %i
+                      %strong ADD
+                      additional topping 1
+                %td
+                  12
+              %tr
+                %td
+                  %h5
+                    3 EGG OMELET
+                    %span GF
+                  %p
+                    build your own – choose up to 3 of the following: mushrooms, onions, spinach, tomatoes, bacon, prosciutto, peppers, gruyere, cheddar, fontina, mozzarella, goat cheese
+                    %br
+                    %i
+                      %strong ADD
+                      additional topping 1
+                %td
+                  9
+              %tr
+                %td
+                  %h5
+                    POACHED EGGS
+                    %span GF*
+                  %p fingerlings, jamon Serrano, hollandaise, truffles, onions
+                %td
+                  12
+              %tr
+                %td
+                  %h5
+                    TAVERNA HASH
+                    %span GF*
+                  %p house-made breakfast sausage, fried fingerling potatoes, peppers, onions, 2 eggs sunny side up
+                %td
+                  10
+              %tr
+                %td
+                  %h5
+                    2 EGGS ANY STYLE
+                    %span GF*
+                  %p grilled tomato, 2 strips of bacon, grilled peasant bread
+                %td
+                  8
+              %tr
+                %td
+                  %h5
+                    STEAK & EGGS
+                    %span GF*
+                  %p hanger steak, piperade, roasted fingerlings, 2 poached eggs, hollandaise
+                %td
+                  21
+        %table.menu
+          %thead
+            %th{colspan: '2'} Brunch Cocktails
+          %tbody
+            %tr
+              %td
+                %h5
+                  TANGERINE AIR MIMOSA
+                  %span GF
+                %p
+                  prosecco, tangerine foam
+              %td
+                9
+              %tr
+                %td
+                  %h5
+                    TRADITIONAL MIMOSA
+                    %span GF
+                  %p prosecco, orange juice
+                %td
+                  7
+              %tr
+                %td
+                  %h5
+                    Bloody Mary
+                    %span GF
+                  %p New Amsterdam Vodka, house-made Bloody Mary mix, olive, lemon, pickled green bean
+                %td
+                  8
+              %tr
+                %td
+                  %h5
+                    Cock and Bull
+                    %span GF
+                  %p New Amsterdam Vodka, house-made Bloody Mary mix, chicken stock, beef stock, pickled egg, jerky
+                %td
+                  8
+              %tr
+                %td
+                  %h5
+                    RamoS Fizz
+                    %span GF
+                  %p
+                    Plymouth Gin, lime juice, lemon juice, simple syrup, cream, egg white, fleurs d’ orange, soda
+                    %br
+                    %i
+                      %strong TAVERNA FIZZ
+                      with New Amsterdam Vodka
+                %td
+                  8
+              %tr
+                %td{colspan: '2'}
+                  %h5
+                    FULL COCKTAIL, WINE & BEER MENU ALSO AVAILABLE
+        = image_tag 'images/stamp.png', class: 'stamp'
+    %aside
+      %nav.menu-nav
+        %ul
+          %li
+            = link_to 'Dinner', '/dinner.html'
+          %li
+            = link_to 'Lunch', '/lunch.html'
+          %li
+            = link_to 'Brunch', '/brunch.html', class: 'active'
+          %li
+            = link_to 'Dessert', '/dessert.html'
+          %li
+            = link_to 'Drink', '/drink.html'
+          %li
+            = link_to 'Happy Hour', '/happy-hour.html'
+          %li
+            = link_to 'On the Go', '/togo.html'
+
+
+= partial 'refills/opentable'
+
+= partial 'refills/footer'

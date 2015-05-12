@@ -1,0 +1,67 @@
+%nav
+  .wrapper
+    .logo
+      = link_to '/' do
+        = image_tag 'images/taverna.png'
+    %ul
+      %li
+        .ui.dropdown
+          %span Menus
+          .menu
+            .item
+              = link_to 'Dinner', '/dinner.html', class: 'active'
+            .item
+              = link_to 'Lunch', '/lunch.html'
+            .item
+              = link_to 'Brunch', '/brunch.html'
+            .item
+              = link_to 'Dessert', '/dessert.html'
+            .item
+              = link_to 'Drink', '/drink.html'
+            .item
+              = link_to 'Happy Hour', '/happy-hour.html'
+            .item
+              = link_to 'On the Go', '/togo.html'
+      %li
+        = link_to 'About', '/about.html'
+      %li
+        = link_to 'On the Go', '/togo.html'
+      %li
+        .ui.dropdown
+          %span Special Events
+          .menu
+            .item
+              = link_to 'Private Dining', '/private-dining.html'
+            .item
+              = link_to 'Catering', '/catering.html'
+      %li
+        = link_to 'Gift Cards', '/gift-cards.html'
+      %li
+        = link_to 'Visit', '#footer'
+    .hours
+      Today's Hours
+      %span.day 11am-10pm
+      %span.day 11am-10pm
+      %span.day 11am-10pm
+      %span.day 11am-10pm
+      %span.day 11am-11pm
+      %span.day 11am-11pm
+      %span.day 11am-10pm
+    .info
+      904.398.3005
+      = link_to 'contact@tavernasanmarco.com', 'mailto:contact@tavernasanmarco.com'
+    = link_to '#', class: 'collapse-menu' do
+      %i.ion-navicon-round
+    .ui.basic.modal.mobile-nav
+      .close
+        %i.ion-close-round
+      = link_to 'Dinner', '/dinner.html'
+      = link_to 'Lunch', '/lunch.html'
+      = link_to 'Brunch', '/brunch.html'
+      = link_to 'Dessert', '/dessert.html'
+      = link_to 'Drink', '/drink.html'
+      = link_to 'Happy Hour', '/happy-hour.html'
+      = link_to 'On the Go', '/togo.html'
+      = link_to 'Private Dining', '/private-dining.html'
+      = link_to 'Catering', '/catering.html'
+      = link_to 'Gift Cards', '/gift-cards.html'

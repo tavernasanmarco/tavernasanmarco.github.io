@@ -1,0 +1,119 @@
+nav
+  background: white
+  padding: rem(10)
+  box-sizing: border-box
+  .wrapper
+    display: table
+    width: 100%
+    padding: 0
+    +media($medium)
+      display: block
+      padding: 0
+  .logo, .hours
+    display: table-cell
+    vertical-align: middle
+    width: 33%
+  .logo
+    margin-right: rem(50)
+  ul
+    display: none
+    +media($medium)
+      display: inline-block
+    li
+      display: inline-block
+      text-transform: uppercase
+      margin-right: rem(50)
+      a
+        font:
+          family: 'Gotham', sans-serif
+          size: rem(14)
+          weight: 700
+        color: black
+        text-decoration: none
+        height: rem(70)
+        line-height: rem(70)
+      span
+        line-height: normal
+        font:
+          family: 'Gotham', sans-serif
+          weight: 700
+          size: rem(14)
+        color: black
+        text-decoration: none
+  +media($medium)
+    padding: rem(10) 0
+    display: block
+    .logo, .hours
+      display: inline-block
+      width: auto
+
+.hours
+  border: none
+  text-align: center
+  padding: rem(5) rem(8)
+  box-sizing: border-box
+  text-transform: uppercase
+  white-space: nowrap
+  font:
+    size: rem(12)
+    family: 'Gotham', sans-serif
+    weight: 700
+  span
+    display: none
+    font:
+      size: rem(13)
+      family: 'Sentinel', serif
+      weight: 300
+    text-transform: none
+    &.show-time
+      display: block
+  +media($medium)
+    border: rem(2) solid black
+
+.info
+  font:
+    size: rem(22)
+    family: 'Gotham', sans-serif
+    weight: 700
+  margin-left: rem(50)
+  display: none
+  a
+    font:
+      size: rem(12)
+      family: 'Sentinel', serif
+      weight: 300
+    display: block
+    text-decoration: none
+    color: black
+  +media($medium)
+    display: inline-block
+    vertical-align: middle
+
+.collapse-menu
+  color: black
+  font-size: rem(32)
+  display: table-cell
+  text-align: right
+  vertical-align: middle
+  +media($medium)
+    display: none
+
+.mobile-nav
+  display: block
+  a
+    color: rgba(255,255,255,0.7)
+    display: block
+    text-align: center
+    text-decoration: none
+    text-transform: uppercase
+    +transition(all 0.3s ease-in-out)
+    font:
+      size: rem(30)
+      weight: 700
+      family: 'Gotham', sans-serif
+    margin-bottom: rem(20)
+    &:hover
+      color: white
+
+.ui.basic.modal > .close
+  top: rem(-60) !important
