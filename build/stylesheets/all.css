@@ -19,12 +19,6 @@ body {
   font-weight: 300;
   line-height: 24px; }
 
-/* line 14, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/global.css.sass */
-a {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-
 /* line 17, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/global.css.sass */
 .wrapper {
   max-width: 1300px;
