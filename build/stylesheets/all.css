@@ -19,9 +19,27 @@ body {
   font-weight: 300;
   line-height: 24px; }
 
+/* line 14, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/global.css.sass */
+a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
 /* line 17, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/global.css.sass */
 .wrapper {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 1.875rem; }
+  /* line 15, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 976px) {
+    /* line 17, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/global.css.sass */
+    .wrapper {
+      padding: 0; } }
 
 /*!
  * # Semantic UI 1.12.0 - Transition
