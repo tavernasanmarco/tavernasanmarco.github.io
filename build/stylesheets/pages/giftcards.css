@@ -1,0 +1,8 @@
+/* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/giftcards.css.sass */
+.gift-cards {
+  background: url("/images/gift-cards-bg.jpg") no-repeat;
+  position: relative;
+  background-size: cover;
+  height: rem(528);
+  min-height: 100%;
+  width: 100%; }

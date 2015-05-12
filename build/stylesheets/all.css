@@ -1,0 +1,4818 @@
+@charset "UTF-8";
+/* line 2, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/global.css.sass */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: none;
+  box-sizing: border-box; }
+
+/* line 7, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/global.css.sass */
+body {
+  font-family: "Sentinel", serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px; }
+
+/* line 14, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/global.css.sass */
+a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+/* line 17, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/global.css.sass */
+.wrapper {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.875rem; }
+  /* line 15, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 976px) {
+    /* line 17, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/global.css.sass */
+    .wrapper {
+      padding: 0; } }
+
+/*!
+ * # Semantic UI 1.12.0 - Transition
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributorss
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+/*******************************
+          Transitions
+*******************************/
+/* line 18, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition {
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+/*******************************
+            States
+*******************************/
+/* Animating */
+/* line 36, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.animating.transition {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  visibility: visible !important; }
+
+/* Loading */
+/* line 45, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.loading.transition {
+  position: absolute;
+  top: -99999px;
+  left: -99999px; }
+
+/* Hidden */
+/* line 52, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.hidden.transition {
+  display: none;
+  visibility: hidden; }
+
+/* Visible */
+/* line 58, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.visible.transition {
+  display: block !important;
+  visibility: visible !important;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+
+/* Disabled */
+/* line 68, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.disabled.transition {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused; }
+
+/*******************************
+          Variations
+*******************************/
+/* line 78, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.looping.transition {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+/*******************************
+          Transitions
+*******************************/
+/*
+  Some transitions adapted from Animate CSS
+  https://github.com/daneden/animate.css
+
+  Additional transitions adapted from Glide
+  by Nick Pettit - https://github.com/nickpettit/glide
+*/
+/*--------------
+     Browse
+---------------*/
+/* line 100, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition.browse {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms; }
+
+/* line 104, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition.browse.in {
+  -webkit-animation-name: browseIn;
+  animation-name: browseIn; }
+
+/* line 108, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition.browse.out,
+.transition.browse.left.out {
+  -webkit-animation-name: browseOutLeft;
+  animation-name: browseOutLeft; }
+
+/* line 113, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition.browse.right.out {
+  -webkit-animation-name: browseOutRight;
+  animation-name: browseOutRight; }
+
+/* In */
+@-webkit-keyframes browseIn {
+  0% {
+    -webkit-transform: scale(0.8) translateZ(0px);
+    transform: scale(0.8) translateZ(0px);
+    z-index: -1; }
+  10% {
+    -webkit-transform: scale(0.8) translateZ(0px);
+    transform: scale(0.8) translateZ(0px);
+    z-index: -1;
+    opacity: 0.7; }
+  80% {
+    -webkit-transform: scale(1.05) translateZ(0px);
+    transform: scale(1.05) translateZ(0px);
+    opacity: 1;
+    z-index: 999; }
+  100% {
+    -webkit-transform: scale(1) translateZ(0px);
+    transform: scale(1) translateZ(0px);
+    z-index: 999; } }
+@keyframes browseIn {
+  0% {
+    -webkit-transform: scale(0.8) translateZ(0px);
+    transform: scale(0.8) translateZ(0px);
+    z-index: -1; }
+  10% {
+    -webkit-transform: scale(0.8) translateZ(0px);
+    transform: scale(0.8) translateZ(0px);
+    z-index: -1;
+    opacity: 0.7; }
+  80% {
+    -webkit-transform: scale(1.05) translateZ(0px);
+    transform: scale(1.05) translateZ(0px);
+    opacity: 1;
+    z-index: 999; }
+  100% {
+    -webkit-transform: scale(1) translateZ(0px);
+    transform: scale(1) translateZ(0px);
+    z-index: 999; } }
+/* Out */
+@-webkit-keyframes browseOutLeft {
+  0% {
+    z-index: 999;
+    -webkit-transform: translateX(0%) rotateY(0deg) rotateX(0deg);
+    transform: translateX(0%) rotateY(0deg) rotateX(0deg); }
+  50% {
+    z-index: -1;
+    -webkit-transform: translateX(-105%) rotateY(35deg) rotateX(10deg) translateZ(-10px);
+    transform: translateX(-105%) rotateY(35deg) rotateX(10deg) translateZ(-10px); }
+  80% {
+    opacity: 1; }
+  100% {
+    z-index: -1;
+    -webkit-transform: translateX(0%) rotateY(0deg) rotateX(0deg) translateZ(-10px);
+    transform: translateX(0%) rotateY(0deg) rotateX(0deg) translateZ(-10px);
+    opacity: 0; } }
+@keyframes browseOutLeft {
+  0% {
+    z-index: 999;
+    -webkit-transform: translateX(0%) rotateY(0deg) rotateX(0deg);
+    transform: translateX(0%) rotateY(0deg) rotateX(0deg); }
+  50% {
+    z-index: -1;
+    -webkit-transform: translateX(-105%) rotateY(35deg) rotateX(10deg) translateZ(-10px);
+    transform: translateX(-105%) rotateY(35deg) rotateX(10deg) translateZ(-10px); }
+  80% {
+    opacity: 1; }
+  100% {
+    z-index: -1;
+    -webkit-transform: translateX(0%) rotateY(0deg) rotateX(0deg) translateZ(-10px);
+    transform: translateX(0%) rotateY(0deg) rotateX(0deg) translateZ(-10px);
+    opacity: 0; } }
+@-webkit-keyframes browseOutRight {
+  0% {
+    z-index: 999;
+    -webkit-transform: translateX(0%) rotateY(0deg) rotateX(0deg);
+    transform: translateX(0%) rotateY(0deg) rotateX(0deg); }
+  50% {
+    z-index: 1;
+    -webkit-transform: translateX(105%) rotateY(35deg) rotateX(10deg) translateZ(-10px);
+    transform: translateX(105%) rotateY(35deg) rotateX(10deg) translateZ(-10px); }
+  80% {
+    opacity: 1; }
+  100% {
+    z-index: 1;
+    -webkit-transform: translateX(0%) rotateY(0deg) rotateX(0deg) translateZ(-10px);
+    transform: translateX(0%) rotateY(0deg) rotateX(0deg) translateZ(-10px);
+    opacity: 0; } }
+@keyframes browseOutRight {
+  0% {
+    z-index: 999;
+    -webkit-transform: translateX(0%) rotateY(0deg) rotateX(0deg);
+    transform: translateX(0%) rotateY(0deg) rotateX(0deg); }
+  50% {
+    z-index: 1;
+    -webkit-transform: translateX(105%) rotateY(35deg) rotateX(10deg) translateZ(-10px);
+    transform: translateX(105%) rotateY(35deg) rotateX(10deg) translateZ(-10px); }
+  80% {
+    opacity: 1; }
+  100% {
+    z-index: 1;
+    -webkit-transform: translateX(0%) rotateY(0deg) rotateX(0deg) translateZ(-10px);
+    transform: translateX(0%) rotateY(0deg) rotateX(0deg) translateZ(-10px);
+    opacity: 0; } }
+/*--------------
+     Drop
+---------------*/
+/* line 258, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.drop.transition {
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+  -webkit-animation-timing-function: cubic-bezier(0.34, 1.61, 0.7, 1);
+  animation-timing-function: cubic-bezier(0.34, 1.61, 0.7, 1); }
+
+/* line 267, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.drop.transition.in {
+  -webkit-animation-name: dropIn;
+  animation-name: dropIn; }
+
+/* line 271, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.drop.transition.out {
+  -webkit-animation-name: dropOut;
+  animation-name: dropOut; }
+
+/* Drop */
+@-webkit-keyframes dropIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@-webkit-keyframes dropOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0); } }
+@keyframes dropOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0); } }
+/*--------------
+      Fade
+---------------*/
+/* line 330, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition.fade.in {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+/* line 334, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="fade up"].in {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
+
+/* line 338, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="fade down"].in {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
+
+/* line 342, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="fade left"].in {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft; }
+
+/* line 346, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="fade right"].in {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight; }
+
+/* line 350, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition.fade.out {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut; }
+
+/* line 354, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="fade up"].out {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp; }
+
+/* line 358, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="fade down"].out {
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown; }
+
+/* line 362, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="fade left"].out {
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft; }
+
+/* line 366, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="fade right"].out {
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight; }
+
+/* In */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); } }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); } }
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); } }
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); } }
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); } }
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); } }
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); } }
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); } }
+/* Out */
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-webkit-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%); } }
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%); } }
+@-webkit-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%); } }
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%); } }
+@-webkit-keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%); } }
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%); } }
+@-webkit-keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%); } }
+@keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%); } }
+/*--------------
+     Flips
+---------------*/
+/* line 603, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.flip.transition.in,
+.flip.transition.out {
+  -webkit-animation-duration: 600ms;
+  animation-duration: 600ms;
+  -webkit-perspective: 2000px;
+  perspective: 2000px; }
+
+/* line 610, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.horizontal.flip.transition.in {
+  -webkit-animation-name: horizontalFlipIn;
+  animation-name: horizontalFlipIn; }
+
+/* line 614, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.horizontal.flip.transition.out {
+  -webkit-animation-name: horizontalFlipOut;
+  animation-name: horizontalFlipOut; }
+
+/* line 618, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.vertical.flip.transition.in {
+  -webkit-animation-name: verticalFlipIn;
+  animation-name: verticalFlipIn; }
+
+/* line 622, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.vertical.flip.transition.out {
+  -webkit-animation-name: verticalFlipOut;
+  animation-name: verticalFlipOut; }
+
+/* In */
+@-webkit-keyframes horizontalFlipIn {
+  0% {
+    -webkit-transform: perspective(2000px) rotateY(-90deg);
+    transform: perspective(2000px) rotateY(-90deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: perspective(2000px) rotateY(0deg);
+    transform: perspective(2000px) rotateY(0deg);
+    opacity: 1; } }
+@keyframes horizontalFlipIn {
+  0% {
+    -webkit-transform: perspective(2000px) rotateY(-90deg);
+    transform: perspective(2000px) rotateY(-90deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: perspective(2000px) rotateY(0deg);
+    transform: perspective(2000px) rotateY(0deg);
+    opacity: 1; } }
+@-webkit-keyframes verticalFlipIn {
+  0% {
+    -webkit-transform: perspective(2000px) rotateX(-90deg);
+    transform: perspective(2000px) rotateX(-90deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: perspective(2000px) rotateX(0deg);
+    transform: perspective(2000px) rotateX(0deg);
+    opacity: 1; } }
+@keyframes verticalFlipIn {
+  0% {
+    -webkit-transform: perspective(2000px) rotateX(-90deg);
+    transform: perspective(2000px) rotateX(-90deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: perspective(2000px) rotateX(0deg);
+    transform: perspective(2000px) rotateX(0deg);
+    opacity: 1; } }
+/* Out */
+@-webkit-keyframes horizontalFlipOut {
+  0% {
+    -webkit-transform: perspective(2000px) rotateY(0deg);
+    transform: perspective(2000px) rotateY(0deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: perspective(2000px) rotateY(90deg);
+    transform: perspective(2000px) rotateY(90deg);
+    opacity: 0; } }
+@keyframes horizontalFlipOut {
+  0% {
+    -webkit-transform: perspective(2000px) rotateY(0deg);
+    transform: perspective(2000px) rotateY(0deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: perspective(2000px) rotateY(90deg);
+    transform: perspective(2000px) rotateY(90deg);
+    opacity: 0; } }
+@-webkit-keyframes verticalFlipOut {
+  0% {
+    -webkit-transform: perspective(2000px) rotateX(0deg);
+    transform: perspective(2000px) rotateX(0deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: perspective(2000px) rotateX(-90deg);
+    transform: perspective(2000px) rotateX(-90deg);
+    opacity: 0; } }
+@keyframes verticalFlipOut {
+  0% {
+    -webkit-transform: perspective(2000px) rotateX(0deg);
+    transform: perspective(2000px) rotateX(0deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: perspective(2000px) rotateX(-90deg);
+    transform: perspective(2000px) rotateX(-90deg);
+    opacity: 0; } }
+/*--------------
+      Scale
+---------------*/
+/* line 731, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.scale.transition.in {
+  -webkit-animation-name: scaleIn;
+  animation-name: scaleIn; }
+
+/* line 735, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.scale.transition.out {
+  -webkit-animation-name: scaleOut;
+  animation-name: scaleOut; }
+
+/* In */
+@-webkit-keyframes scaleIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+/* Out */
+@-webkit-keyframes scaleOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7); } }
+@keyframes scaleOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7); } }
+/*--------------
+      Fly
+---------------*/
+/* Inward */
+/* line 798, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition.fly {
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+/* line 804, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition.fly.in {
+  -webkit-animation-name: flyIn;
+  animation-name: flyIn; }
+
+/* line 808, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="fly up"].in {
+  -webkit-animation-name: flyInUp;
+  animation-name: flyInUp; }
+
+/* line 812, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="fly down"].in {
+  -webkit-animation-name: flyInDown;
+  animation-name: flyInDown; }
+
+/* line 816, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="fly left"].in {
+  -webkit-animation-name: flyInLeft;
+  animation-name: flyInLeft; }
+
+/* line 820, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="fly right"].in {
+  -webkit-animation-name: flyInRight;
+  animation-name: flyInRight; }
+
+/* Outward */
+/* line 826, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition.fly.out {
+  -webkit-animation-name: flyOut;
+  animation-name: flyOut; }
+
+/* line 830, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="fly up"].out {
+  -webkit-animation-name: flyOutUp;
+  animation-name: flyOutUp; }
+
+/* line 834, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="fly down"].out {
+  -webkit-animation-name: flyOutDown;
+  animation-name: flyOutDown; }
+
+/* line 838, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="fly left"].out {
+  -webkit-animation-name: flyOutLeft;
+  animation-name: flyOutLeft; }
+
+/* line 842, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="fly right"].out {
+  -webkit-animation-name: flyOutRight;
+  animation-name: flyOutRight; }
+
+/* In */
+@-webkit-keyframes flyIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03); }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+@keyframes flyIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03); }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+@-webkit-keyframes flyInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 1500px, 0);
+    transform: translate3d(0, 1500px, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@keyframes flyInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 1500px, 0);
+    transform: translate3d(0, 1500px, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@-webkit-keyframes flyInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -1500px, 0);
+    transform: translate3d(0, -1500px, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0); }
+  100% {
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes flyInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -1500px, 0);
+    transform: translate3d(0, -1500px, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0); }
+  100% {
+    -webkit-transform: none;
+    transform: none; } }
+@-webkit-keyframes flyInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(1500px, 0, 0);
+    transform: translate3d(1500px, 0, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0); }
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0); }
+  100% {
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes flyInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(1500px, 0, 0);
+    transform: translate3d(1500px, 0, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0); }
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0); }
+  100% {
+    -webkit-transform: none;
+    transform: none; } }
+@-webkit-keyframes flyInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-1500px, 0, 0);
+    transform: translate3d(-1500px, 0, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0); }
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0); }
+  100% {
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes flyInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-1500px, 0, 0);
+    transform: translate3d(-1500px, 0, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0); }
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0); }
+  100% {
+    -webkit-transform: none;
+    transform: none; } }
+/* Out */
+@-webkit-keyframes flyOut {
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9); }
+  50%,
+  55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); } }
+@keyframes flyOut {
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9); }
+  50%,
+  55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); } }
+@-webkit-keyframes flyOutUp {
+  20% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0); }
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0); } }
+@keyframes flyOutUp {
+  20% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0); }
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0); } }
+@-webkit-keyframes flyOutDown {
+  20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0); }
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); } }
+@keyframes flyOutDown {
+  20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0); }
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); } }
+@-webkit-keyframes flyOutRight {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); } }
+@keyframes flyOutRight {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); } }
+@-webkit-keyframes flyOutLeft {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-20px, 0, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0); } }
+@keyframes flyOutLeft {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-20px, 0, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0); } }
+/*--------------
+     Slide
+---------------*/
+/* line 1255, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition.slide.in,
+.transition[class*="slide down"].in {
+  -webkit-animation-name: slideInY;
+  animation-name: slideInY;
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center; }
+
+/* line 1263, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="slide up"].in {
+  -webkit-animation-name: slideInY;
+  animation-name: slideInY;
+  -webkit-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  transform-origin: bottom center; }
+
+/* line 1270, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="slide left"].in {
+  -webkit-animation-name: slideInX;
+  animation-name: slideInX;
+  -webkit-transform-origin: center right;
+  -ms-transform-origin: center right;
+  transform-origin: center right; }
+
+/* line 1277, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="slide right"].in {
+  -webkit-animation-name: slideInX;
+  animation-name: slideInX;
+  -webkit-transform-origin: center left;
+  -ms-transform-origin: center left;
+  transform-origin: center left; }
+
+/* line 1284, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition.slide.out,
+.transition[class*="slide down"].out {
+  -webkit-animation-name: slideOutY;
+  animation-name: slideOutY;
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center; }
+
+/* line 1292, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="slide up"].out {
+  -webkit-animation-name: slideOutY;
+  animation-name: slideOutY;
+  -webkit-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  transform-origin: bottom center; }
+
+/* line 1299, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="slide left"].out {
+  -webkit-animation-name: slideOutX;
+  animation-name: slideOutX;
+  -webkit-transform-origin: center right;
+  -ms-transform-origin: center right;
+  transform-origin: center right; }
+
+/* line 1306, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="slide right"].out {
+  -webkit-animation-name: slideOutX;
+  animation-name: slideOutX;
+  -webkit-transform-origin: center left;
+  -ms-transform-origin: center left;
+  transform-origin: center left; }
+
+/* In */
+@-webkit-keyframes slideInY {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); } }
+@keyframes slideInY {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); } }
+@-webkit-keyframes slideInX {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+@keyframes slideInX {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+/* Out */
+@-webkit-keyframes slideOutY {
+  0% {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0); } }
+@keyframes slideOutY {
+  0% {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0); } }
+@-webkit-keyframes slideOutX {
+  0% {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0); } }
+@keyframes slideOutX {
+  0% {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0); } }
+/*--------------
+     Swing
+---------------*/
+/* line 1418, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition.swing {
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms; }
+
+/* line 1422, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="swing down"].in {
+  -webkit-animation-name: swingInX;
+  animation-name: swingInX;
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center; }
+
+/* line 1429, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="swing up"].in {
+  -webkit-animation-name: swingInX;
+  animation-name: swingInX;
+  -webkit-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  transform-origin: bottom center; }
+
+/* line 1436, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="swing left"].in {
+  -webkit-animation-name: swingInY;
+  animation-name: swingInY;
+  -webkit-transform-origin: center right;
+  -ms-transform-origin: center right;
+  transform-origin: center right; }
+
+/* line 1443, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="swing right"].in {
+  -webkit-animation-name: swingInY;
+  animation-name: swingInY;
+  -webkit-transform-origin: center left;
+  -ms-transform-origin: center left;
+  transform-origin: center left; }
+
+/* line 1450, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition.swing.out,
+.transition[class*="swing down"].out {
+  -webkit-animation-name: swingOutX;
+  animation-name: swingOutX;
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center; }
+
+/* line 1458, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="swing up"].out {
+  -webkit-animation-name: swingOutX;
+  animation-name: swingOutX;
+  -webkit-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  transform-origin: bottom center; }
+
+/* line 1465, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="swing left"].out {
+  -webkit-animation-name: swingOutY;
+  animation-name: swingOutY;
+  -webkit-transform-origin: center right;
+  -ms-transform-origin: center right;
+  transform-origin: center right; }
+
+/* line 1472, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.transition[class*="swing right"].out {
+  -webkit-animation-name: swingOutY;
+  animation-name: swingOutY;
+  -webkit-transform-origin: center left;
+  -ms-transform-origin: center left;
+  transform-origin: center left; }
+
+/* In */
+@-webkit-keyframes swingInX {
+  0% {
+    -webkit-transform: perspective(1000px) rotateX(90deg);
+    transform: perspective(1000px) rotateX(90deg);
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(1000px) rotateX(-30deg);
+    transform: perspective(1000px) rotateX(-30deg);
+    opacity: 1; }
+  60% {
+    -webkit-transform: perspective(1000px) rotateX(15deg);
+    transform: perspective(1000px) rotateX(15deg); }
+  80% {
+    -webkit-transform: perspective(1000px) rotateX(-7.5deg);
+    transform: perspective(1000px) rotateX(-7.5deg); }
+  100% {
+    -webkit-transform: perspective(1000px) rotateX(0deg);
+    transform: perspective(1000px) rotateX(0deg); } }
+@keyframes swingInX {
+  0% {
+    -webkit-transform: perspective(1000px) rotateX(90deg);
+    transform: perspective(1000px) rotateX(90deg);
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(1000px) rotateX(-30deg);
+    transform: perspective(1000px) rotateX(-30deg);
+    opacity: 1; }
+  60% {
+    -webkit-transform: perspective(1000px) rotateX(15deg);
+    transform: perspective(1000px) rotateX(15deg); }
+  80% {
+    -webkit-transform: perspective(1000px) rotateX(-7.5deg);
+    transform: perspective(1000px) rotateX(-7.5deg); }
+  100% {
+    -webkit-transform: perspective(1000px) rotateX(0deg);
+    transform: perspective(1000px) rotateX(0deg); } }
+@-webkit-keyframes swingInY {
+  0% {
+    -webkit-transform: perspective(1000px) rotateY(-90deg);
+    transform: perspective(1000px) rotateY(-90deg);
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(1000px) rotateY(30deg);
+    transform: perspective(1000px) rotateY(30deg);
+    opacity: 1; }
+  60% {
+    -webkit-transform: perspective(1000px) rotateY(-17.5deg);
+    transform: perspective(1000px) rotateY(-17.5deg); }
+  80% {
+    -webkit-transform: perspective(1000px) rotateY(7.5deg);
+    transform: perspective(1000px) rotateY(7.5deg); }
+  100% {
+    -webkit-transform: perspective(1000px) rotateY(0deg);
+    transform: perspective(1000px) rotateY(0deg); } }
+@keyframes swingInY {
+  0% {
+    -webkit-transform: perspective(1000px) rotateY(-90deg);
+    transform: perspective(1000px) rotateY(-90deg);
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(1000px) rotateY(30deg);
+    transform: perspective(1000px) rotateY(30deg);
+    opacity: 1; }
+  60% {
+    -webkit-transform: perspective(1000px) rotateY(-17.5deg);
+    transform: perspective(1000px) rotateY(-17.5deg); }
+  80% {
+    -webkit-transform: perspective(1000px) rotateY(7.5deg);
+    transform: perspective(1000px) rotateY(7.5deg); }
+  100% {
+    -webkit-transform: perspective(1000px) rotateY(0deg);
+    transform: perspective(1000px) rotateY(0deg); } }
+/* Out */
+@-webkit-keyframes swingOutX {
+  0% {
+    -webkit-transform: perspective(1000px) rotateX(0deg);
+    transform: perspective(1000px) rotateX(0deg); }
+  40% {
+    -webkit-transform: perspective(1000px) rotateX(-7.5deg);
+    transform: perspective(1000px) rotateX(-7.5deg); }
+  60% {
+    -webkit-transform: perspective(1000px) rotateX(17.5deg);
+    transform: perspective(1000px) rotateX(17.5deg); }
+  80% {
+    -webkit-transform: perspective(1000px) rotateX(-30deg);
+    transform: perspective(1000px) rotateX(-30deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: perspective(1000px) rotateX(90deg);
+    transform: perspective(1000px) rotateX(90deg);
+    opacity: 0; } }
+@keyframes swingOutX {
+  0% {
+    -webkit-transform: perspective(1000px) rotateX(0deg);
+    transform: perspective(1000px) rotateX(0deg); }
+  40% {
+    -webkit-transform: perspective(1000px) rotateX(-7.5deg);
+    transform: perspective(1000px) rotateX(-7.5deg); }
+  60% {
+    -webkit-transform: perspective(1000px) rotateX(17.5deg);
+    transform: perspective(1000px) rotateX(17.5deg); }
+  80% {
+    -webkit-transform: perspective(1000px) rotateX(-30deg);
+    transform: perspective(1000px) rotateX(-30deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: perspective(1000px) rotateX(90deg);
+    transform: perspective(1000px) rotateX(90deg);
+    opacity: 0; } }
+@-webkit-keyframes swingOutY {
+  0% {
+    -webkit-transform: perspective(1000px) rotateY(0deg);
+    transform: perspective(1000px) rotateY(0deg); }
+  40% {
+    -webkit-transform: perspective(1000px) rotateY(7.5deg);
+    transform: perspective(1000px) rotateY(7.5deg); }
+  60% {
+    -webkit-transform: perspective(1000px) rotateY(-10deg);
+    transform: perspective(1000px) rotateY(-10deg); }
+  80% {
+    -webkit-transform: perspective(1000px) rotateY(30deg);
+    transform: perspective(1000px) rotateY(30deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: perspective(1000px) rotateY(-90deg);
+    transform: perspective(1000px) rotateY(-90deg);
+    opacity: 0; } }
+@keyframes swingOutY {
+  0% {
+    -webkit-transform: perspective(1000px) rotateY(0deg);
+    transform: perspective(1000px) rotateY(0deg); }
+  40% {
+    -webkit-transform: perspective(1000px) rotateY(7.5deg);
+    transform: perspective(1000px) rotateY(7.5deg); }
+  60% {
+    -webkit-transform: perspective(1000px) rotateY(-10deg);
+    transform: perspective(1000px) rotateY(-10deg); }
+  80% {
+    -webkit-transform: perspective(1000px) rotateY(30deg);
+    transform: perspective(1000px) rotateY(30deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: perspective(1000px) rotateY(-90deg);
+    transform: perspective(1000px) rotateY(-90deg);
+    opacity: 0; } }
+/*******************************
+       Static Animations
+*******************************/
+/*--------------
+    Emphasis
+---------------*/
+/* line 1686, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.flash.transition {
+  -webkit-animation-duration: 750ms;
+  animation-duration: 750ms;
+  -webkit-animation-name: flash;
+  animation-name: flash; }
+
+/* line 1692, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.shake.transition {
+  -webkit-animation-duration: 750ms;
+  animation-duration: 750ms;
+  -webkit-animation-name: shake;
+  animation-name: shake; }
+
+/* line 1698, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.bounce.transition {
+  -webkit-animation-duration: 750ms;
+  animation-duration: 750ms;
+  -webkit-animation-name: bounce;
+  animation-name: bounce; }
+
+/* line 1704, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.tada.transition {
+  -webkit-animation-duration: 750ms;
+  animation-duration: 750ms;
+  -webkit-animation-name: tada;
+  animation-name: tada; }
+
+/* line 1710, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.pulse.transition {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+  -webkit-animation-name: pulse;
+  animation-name: pulse; }
+
+/* line 1716, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/transition.css */
+.jiggle.transition {
+  -webkit-animation-duration: 750ms;
+  animation-duration: 750ms;
+  -webkit-animation-name: jiggle;
+  animation-name: jiggle; }
+
+/* Flash */
+@-webkit-keyframes flash {
+  0%,
+  50%,
+  100% {
+    opacity: 1; }
+  25%,
+  75% {
+    opacity: 0; } }
+@keyframes flash {
+  0%,
+  50%,
+  100% {
+    opacity: 1; }
+  25%,
+  75% {
+    opacity: 0; } }
+/* Shake */
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); } }
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); } }
+/* Bounce */
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+/* Tada */
+@-webkit-keyframes tada {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  10%,
+  20% {
+    -webkit-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg); }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg); }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg); }
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0); } }
+@keyframes tada {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  10%,
+  20% {
+    -webkit-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg); }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg); }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg); }
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0); } }
+/* Pulse */
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.7; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.7; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+/* Rubberband */
+@-webkit-keyframes jiggle {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1); }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+@keyframes jiggle {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1); }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+/*******************************
+         Site Overrides
+*******************************/
+/*!
+ * # Semantic UI 1.12.0 - Dropdown
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+/*******************************
+            Dropdown
+*******************************/
+/* line 18, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  line-height: 1em;
+  tap-highlight-color: transparent;
+  outline: none;
+  text-align: left;
+  -webkit-transition: border-radius 0.1s ease, width 0.2s ease;
+  transition: border-radius 0.1s ease, width 0.2s ease; }
+
+/*******************************
+            Content
+*******************************/
+/*--------------
+      Menu
+---------------*/
+/* line 40, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu {
+  cursor: auto;
+  position: absolute;
+  display: none;
+  outline: none;
+  top: 100%;
+  margin: 0em;
+  padding: 0em 0em;
+  background: #ffffff;
+  min-width: 100%;
+  white-space: nowrap;
+  font-size: 1rem;
+  text-shadow: none;
+  text-align: left;
+  box-shadow: 0px 1px 4px 0px rgba(39, 41, 43, 0.15);
+  border: 1px solid rgba(39, 41, 43, 0.15);
+  border-radius: 0em 0em 0.2857rem 0.2857rem;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  z-index: 11;
+  will-change: transform, opacity; }
+
+/*--------------
+  Hidden Input
+---------------*/
+/* line 67, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown > input:not(.search):first-child,
+.ui.dropdown > select {
+  display: none !important; }
+
+/*--------------
+ Dropdown Icon
+---------------*/
+/* line 76, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown > .dropdown.icon {
+  width: auto;
+  margin: 0em 0em 0em 1em; }
+
+/* line 80, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu > .item .dropdown.icon {
+  width: auto;
+  float: right;
+  margin: 0em 0em 0em 1em; }
+
+/* line 85, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu > .item .dropdown.icon + .text {
+  margin-right: 1em; }
+
+/*--------------
+      Text
+---------------*/
+/* line 93, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown > .text {
+  display: inline-block;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease; }
+
+/*--------------
+    Menu Item
+---------------*/
+/* line 103, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu > .item {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  border: none;
+  height: auto;
+  border-top: none;
+  line-height: 1em;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1rem;
+  text-transform: none;
+  font-weight: normal;
+  box-shadow: none;
+  -webkit-touch-callout: none; }
+
+/* line 118, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu > .item:first-child {
+  border-top-width: 0px; }
+
+/*--------------
+  Floated Content
+---------------*/
+/* line 126, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown > .text > [class*="right floated"],
+.ui.dropdown .menu .item > [class*="right floated"] {
+  float: right !important;
+  margin-right: 0em !important;
+  margin-left: 1em !important; }
+
+/* line 132, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown > .text > [class*="left floated"],
+.ui.dropdown .menu .item > [class*="left floated"] {
+  float: left !important;
+  margin-left: 0em !important;
+  margin-right: 1em !important; }
+
+/* line 138, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu .item > .icon.floated,
+.ui.dropdown .menu .item > .flag.floated,
+.ui.dropdown .menu .item > .image.floated,
+.ui.dropdown .menu .item > img.floated {
+  margin-top: 0em; }
+
+/*--------------
+  Menu Divider
+---------------*/
+/* line 149, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu > .header {
+  margin: 1rem 0rem 0.75rem;
+  padding: 0em 1.14285714em;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 0.7857rem;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+/* line 157, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu > .divider {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  height: 0em;
+  margin: 0.5em 0em; }
+
+/* line 162, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu > .input {
+  margin: 0.75rem 1.14285714em;
+  min-width: 200px; }
+
+/* line 166, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu > .header + .input {
+  margin-top: 0em; }
+
+/* line 169, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu > .input:not(.transparent) input {
+  padding: 0.5em 1em; }
+
+/* line 172, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu > .input:not(.transparent) .button,
+.ui.dropdown .menu > .input:not(.transparent) .icon,
+.ui.dropdown .menu > .input:not(.transparent) .label {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+
+/*-----------------
+  Item Description
+-------------------*/
+/* line 183, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown > .text > .description,
+.ui.dropdown .menu > .item > .description {
+  margin: 0em 0em 0em 1em;
+  color: rgba(0, 0, 0, 0.4); }
+
+/*--------------
+    Sub Menu
+---------------*/
+/* line 193, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu .menu {
+  top: 0% !important;
+  left: 100% !important;
+  right: auto !important;
+  margin: 0em 0em 0em -0.5em !important;
+  border-radius: 0em 0.2857rem 0.2857rem 0em !important;
+  z-index: 21 !important; }
+
+/* Hide Arrow */
+/* line 203, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu .menu:after {
+  display: none; }
+
+/*******************************
+            Coupling
+*******************************/
+/*--------------
+   Sub Elements
+---------------*/
+/* Icons / Flags / Labels / Image */
+/* line 219, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown > .text > .icon,
+.ui.dropdown > .text > .label,
+.ui.dropdown > .text > .flag,
+.ui.dropdown > .text > img,
+.ui.dropdown > .text > .image {
+  margin-top: 0em; }
+
+/* line 226, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu > .item > .icon,
+.ui.dropdown .menu > .item > .label,
+.ui.dropdown .menu > .item > .flag,
+.ui.dropdown .menu > .item > .image,
+.ui.dropdown .menu > .item > img {
+  margin-top: 0em; }
+
+/* line 233, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown > .text > .icon,
+.ui.dropdown > .text > .label,
+.ui.dropdown > .text > .flag,
+.ui.dropdown > .text > img,
+.ui.dropdown > .text > .image,
+.ui.dropdown .menu > .item > .icon,
+.ui.dropdown .menu > .item > .label,
+.ui.dropdown .menu > .item > .flag,
+.ui.dropdown .menu > .item > .image,
+.ui.dropdown .menu > .item > img {
+  margin-left: 0em;
+  float: none;
+  margin-right: 0.75em; }
+
+/*--------------
+     Image
+---------------*/
+/* line 252, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown > .text > img,
+.ui.dropdown > .text > .image,
+.ui.dropdown .menu > .item > .image,
+.ui.dropdown .menu > .item > img {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  max-height: 2.5em; }
+
+/*--------------
+      Menu
+---------------*/
+/* Remove Menu Item Divider */
+/* line 268, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .ui.menu > .item:before,
+.ui.menu .ui.dropdown .menu > .item:before {
+  display: none; }
+
+/* Prevent Menu Item Border */
+/* line 274, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.menu .ui.dropdown .menu .active.item {
+  border-left: none; }
+
+/* Automatically float dropdown menu right on last menu item */
+/* line 279, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.menu .right.menu .dropdown:last-child .menu,
+.ui.menu .right.dropdown.item .menu,
+.ui.buttons > .ui.dropdown:last-child .menu {
+  left: auto;
+  right: 0em; }
+
+/*--------------
+     Button
+---------------*/
+/* No Margin On Icon Button */
+/* line 292, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown.icon.button > .dropdown.icon {
+  margin: 0em; }
+
+/* line 295, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown.button:not(.pointing):not(.floating).active,
+.ui.dropdown.button:not(.pointing):not(.floating).visible {
+  border-bottom-left-radius: 0em;
+  border-bottom-right-radius: 0em; }
+
+/*******************************
+              Types
+*******************************/
+/*--------------
+    Selection
+---------------*/
+/* Displays like a select box */
+/* line 313, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.selection.dropdown {
+  cursor: pointer;
+  word-wrap: break-word;
+  white-space: normal;
+  outline: 0;
+  -webkit-transform: rotateZ(0deg);
+  transform: rotateZ(0deg);
+  min-width: 180px;
+  background: #ffffff;
+  display: inline-block;
+  padding: 0.8em 1.1em;
+  color: rgba(0, 0, 0, 0.8);
+  box-shadow: none;
+  border: 1px solid rgba(39, 41, 43, 0.15);
+  border-radius: 0.2857rem;
+  -webkit-transition: border-radius 0.1s ease, width 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+  transition: border-radius 0.1s ease, width 0.2s ease, box-shadow 0.2s ease, border 0.2s ease; }
+
+/* line 331, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.selection.dropdown.visible,
+.ui.selection.dropdown.active {
+  z-index: 10; }
+
+/* line 335, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+select.ui.dropdown {
+  height: 38px;
+  padding: 0.5em;
+  border: 1px solid rgba(39, 41, 43, 0.15);
+  visibility: visible; }
+
+/* line 341, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.selection.dropdown > .text {
+  margin-right: 2em; }
+
+/* line 344, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.selection.dropdown > .search.icon,
+.ui.selection.dropdown > .delete.icon,
+.ui.selection.dropdown > .dropdown.icon {
+  cursor: pointer;
+  position: absolute;
+  top: auto;
+  width: auto;
+  margin: -0.8em;
+  padding: 0.8em;
+  right: 1.1em;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease; }
+
+/* Compact */
+/* line 360, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.compact.selection.dropdown {
+  min-width: 0px; }
+
+/*  Selection Menu */
+/* line 365, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.selection.dropdown .menu {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-overflow-scrolling: touch;
+  border-top-width: 0px !important;
+  width: auto;
+  margin: 0px -1px;
+  min-width: -webkit-calc(100% +  2px );
+  min-width: calc(100% +  2px );
+  outline: none;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  -webkit-transition: box-shadow 0.2s ease, border 0.2s ease;
+  transition: box-shadow 0.2s ease, border 0.2s ease; }
+
+/* line 381, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.selection.dropdown .menu:after,
+.ui.selection.dropdown .menu:before {
+  display: none; }
+
+/* Scrollbar in IE */
+@media all and (-ms-high-contrast: none) {
+  /* line 388, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+  .ui.selection.dropdown .menu {
+    min-width: -webkit-calc(100% -  15px );
+    min-width: calc(100% -  15px ); } }
+@media only screen and (max-width: 767px) {
+  /* line 394, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+  .ui.selection.dropdown .menu {
+    max-height: 7.49991429em; } }
+@media only screen and (min-width: 768px) {
+  /* line 399, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+  .ui.selection.dropdown .menu {
+    max-height: 9.99988571em; } }
+@media only screen and (min-width: 992px) {
+  /* line 404, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+  .ui.selection.dropdown .menu {
+    max-height: 14.99982857em; } }
+@media only screen and (min-width: 1920px) {
+  /* line 409, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+  .ui.selection.dropdown .menu {
+    max-height: 19.99977143em; } }
+/* Menu Item */
+/* line 415, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.selection.dropdown .menu > .item {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 0.71428571em 1.14285714em !important;
+  white-space: normal;
+  word-wrap: normal; }
+
+/* Hover */
+/* line 423, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.selection.dropdown:hover {
+  border-color: rgba(39, 41, 43, 0.3);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.05); }
+
+/* Disabled */
+/* line 429, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.selection.dropdown.disabled,
+.ui.selection.dropdown.disabled:hover {
+  cursor: default;
+  box-shadow: none;
+  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(39, 41, 43, 0.15);
+  opacity: 0.3 !important; }
+
+/* Visible */
+/* line 439, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.selection.dropdown.visible {
+  border-color: rgba(39, 41, 43, 0.3);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08); }
+
+/* line 443, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.selection.visible.dropdown .menu {
+  border-color: rgba(39, 41, 43, 0.3);
+  box-shadow: 0px 2px 6px 0px rgba(39, 41, 43, 0.15); }
+
+/* Visible Hover */
+/* line 449, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.selection.visible.dropdown:hover {
+  border-color: rgba(39, 41, 43, 0.3);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08); }
+
+/* line 453, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.selection.visible.dropdown .menu {
+  border-color: rgba(39, 41, 43, 0.3);
+  box-shadow: 0px 2px 6px 0px rgba(39, 41, 43, 0.15); }
+
+/* Active Item */
+/* line 459, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.selection.active.dropdown > .text:not(.default),
+.ui.selection.visible.dropdown > .text:not(.default) {
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.8); }
+
+/* Dropdown Icon */
+/* line 466, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.active.selection.dropdown > .dropdown.icon,
+.ui.visible.selection.dropdown > .dropdown.icon {
+  opacity: 1;
+  z-index: 3; }
+
+/* Connecting Border */
+/* line 473, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.active.selection.dropdown,
+.ui.visible.selection.dropdown {
+  border-bottom-left-radius: 0em !important;
+  border-bottom-right-radius: 0em !important; }
+
+/*--------------
+   Searchable
+---------------*/
+/* Search Selection */
+/* line 485, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.search.dropdown {
+  min-width: ''; }
+
+/* Search Dropdown */
+/* line 490, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.search.dropdown > input.search {
+  background: none transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0em !important;
+  cursor: pointer;
+  top: 0em;
+  left: 0em;
+  width: 100%;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  padding: inherit; }
+
+/* Text Layering */
+/* line 505, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.search.dropdown > input.search {
+  position: absolute;
+  z-index: 2; }
+
+/* line 509, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.search.dropdown > .text {
+  cursor: text;
+  position: relative;
+  z-index: 3; }
+
+/* Search Selection */
+/* line 516, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.search.selection.dropdown > input.search {
+  line-height: 1.2142em;
+  padding: 0.6929em 1.1em; }
+
+/* Active/Visible Search */
+/* line 522, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.search.dropdown.active > input.search,
+.ui.search.dropdown.visible > input.search {
+  cursor: auto; }
+
+/* line 526, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.search.dropdown.active > .text,
+.ui.search.dropdown.visible > .text {
+  pointer-events: none; }
+
+/* line 530, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.active.search.dropdown > input.search:focus + .text {
+  color: rgba(0, 0, 0, 0.4) !important; }
+
+/* Search Menu */
+/* line 535, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.search.dropdown .menu {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-overflow-scrolling: touch; }
+
+@media only screen and (max-width: 767px) {
+  /* line 543, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+  .ui.search.dropdown .menu {
+    max-height: 7.49991429em; } }
+@media only screen and (min-width: 768px) {
+  /* line 548, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+  .ui.search.dropdown .menu {
+    max-height: 9.99988571em; } }
+@media only screen and (min-width: 992px) {
+  /* line 553, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+  .ui.search.dropdown .menu {
+    max-height: 14.99982857em; } }
+@media only screen and (min-width: 1920px) {
+  /* line 558, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+  .ui.search.dropdown .menu {
+    max-height: 19.99977143em; } }
+/*--------------
+     Inline
+---------------*/
+/* line 567, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.inline.dropdown {
+  cursor: pointer;
+  display: inline-block;
+  color: inherit; }
+
+/* line 572, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.inline.dropdown .dropdown.icon {
+  margin: 0em 0.5em 0em 0.25em;
+  vertical-align: top; }
+
+/* line 576, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.inline.dropdown > .text {
+  font-weight: bold; }
+
+/* line 579, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.inline.dropdown .menu {
+  cursor: auto;
+  margin-top: 0.25em;
+  border-radius: 0.2857rem; }
+
+/*******************************
+            States
+*******************************/
+/*--------------------
+        Hover
+----------------------*/
+/* Menu Item Hover */
+/* line 597, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu > .item:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.8);
+  z-index: 13; }
+
+/*--------------------
+        Active
+----------------------*/
+/* Menu Item Active */
+/* line 609, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu .active.item {
+  background: transparent;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+  box-shadow: none;
+  z-index: 12; }
+
+/*--------------------
+     Default Text
+----------------------*/
+/* line 621, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown > .default.text,
+.ui.default.dropdown > .text {
+  color: rgba(179, 179, 179, 0.7); }
+
+/* line 625, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown:hover > .default.text,
+.ui.default.dropdown:hover > .text {
+  color: rgba(140, 140, 140, 0.7); }
+
+/*--------------------
+        Loading
+----------------------*/
+/* line 634, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.loading.dropdown > .text {
+  -webkit-transition: none;
+  transition: none; }
+
+/* line 638, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown > .loading.menu {
+  display: block;
+  visibility: hidden;
+  z-index: -1; }
+
+/*--------------------
+    Keyboard Select
+----------------------*/
+/* Selected Item */
+/* line 650, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown.selected,
+.ui.dropdown .menu .selected.item {
+  background: rgba(0, 0, 0, 0.03);
+  color: rgba(0, 0, 0, 0.8); }
+
+/*--------------------
+    Search Filtered
+----------------------*/
+/* Filtered Item */
+/* line 662, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown > .filtered.text {
+  visibility: hidden; }
+
+/* line 665, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .filtered.item {
+  display: none !important; }
+
+/*--------------------
+        Error
+----------------------*/
+/* line 673, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown.error,
+.ui.dropdown.error > .text,
+.ui.dropdown.error > .default.text {
+  color: #a94442; }
+
+/* line 678, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.selection.dropdown.error {
+  background: #fff0f0;
+  border-color: #dbb1b1; }
+
+/* line 682, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.selection.dropdown.error:hover {
+  border-color: #dbb1b1; }
+
+/* line 685, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown.error > .menu,
+.ui.dropdown.error > .menu .menu {
+  border-color: #dbb1b1; }
+
+/* line 689, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown.error > .menu > .item {
+  color: #d95c5c; }
+
+/* Item Hover */
+/* line 694, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown.error > .menu > .item:hover {
+  background-color: #fff2f2; }
+
+/* Item Active */
+/* line 699, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown.error > .menu .active.item {
+  background-color: #fdcfcf; }
+
+/*--------------------
+        Disabled
+----------------------*/
+/* Disabled */
+/* line 709, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.disabled.dropdown {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.3; }
+
+/*******************************
+           Variations
+*******************************/
+/*--------------
+    Direction
+---------------*/
+/* Flyout Direction */
+/* line 727, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu {
+  left: 0px; }
+
+/* Default Side (Right) */
+/* line 732, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .right.menu > .menu,
+.ui.dropdown .menu .right.menu {
+  left: 100% !important;
+  right: auto !important; }
+
+/* Left Flyout Menu */
+/* line 739, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown > .left.menu .menu,
+.ui.dropdown .menu .left.menu {
+  left: auto !important;
+  right: 100% !important; }
+
+/* line 744, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .item .left.dropdown.icon,
+.ui.dropdown .left.menu .item .dropdown.icon {
+  width: auto;
+  float: left;
+  margin: 0em 0.75em 0em 0em; }
+
+/* line 750, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .item .left.dropdown.icon,
+.ui.dropdown .left.menu .item .dropdown.icon {
+  width: auto;
+  float: left;
+  margin: 0em 0.75em 0em 0em; }
+
+/* line 756, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .item .left.dropdown.icon + .text,
+.ui.dropdown .left.menu .item .dropdown.icon + .text {
+  margin-left: 1em; }
+
+/*--------------
+     Upward
+---------------*/
+/* line 765, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.upward.dropdown > .menu {
+  top: auto;
+  bottom: 100%;
+  box-shadow: 0px 0px 4px 0px rgba(39, 41, 43, 0.15);
+  border-radius: 0.2857rem 0.2857rem 0em 0em; }
+
+/* Active Upward */
+/* line 773, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.simple.upward.active.dropdown,
+.ui.simple.upward.dropdown:hover {
+  border-radius: 0.2857rem 0.2857rem 0em 0em !important; }
+
+/* line 777, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.upward.dropdown.button:not(.pointing):not(.floating).active,
+.ui.upward.dropdown.button:not(.pointing):not(.floating).visible {
+  border-radius: 0.2857rem 0.2857rem 0em 0em; }
+
+/* Selection */
+/* line 783, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.upward.selection.dropdown .menu {
+  border-top-width: 1px !important;
+  border-bottom-width: 0px !important; }
+
+/* line 787, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.upward.selection.dropdown:hover {
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.05); }
+
+/* line 790, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.upward.selection.visible.dropdown:hover {
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.05); }
+
+/* line 793, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.active.upward.selection.dropdown,
+.ui.visible.upward.selection.dropdown {
+  border-radius: 0em 0em 0.2857rem 0.2857rem !important; }
+
+/* line 797, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.upward.selection.dropdown.visible {
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08); }
+
+/* line 800, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.upward.selection.visible.dropdown:hover .menu {
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08); }
+
+/*--------------
+     Simple
+---------------*/
+/* Displays without javascript */
+/* line 810, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.simple.dropdown .menu:before,
+.ui.simple.dropdown .menu:after {
+  display: none; }
+
+/* line 814, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.simple.dropdown .menu {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  top: -9999px !important;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease; }
+
+/* line 825, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.simple.active.dropdown,
+.ui.simple.dropdown:hover {
+  border-bottom-left-radius: 0em !important;
+  border-bottom-right-radius: 0em !important; }
+
+/* line 830, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.simple.active.dropdown > .menu,
+.ui.simple.dropdown:hover > .menu {
+  overflow: visible;
+  width: auto;
+  height: auto;
+  top: 100% !important;
+  opacity: 1; }
+
+/* line 838, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.simple.dropdown > .menu > .item:active > .menu,
+.ui.simple.dropdown:hover > .menu > .item:hover > .menu {
+  overflow: visible;
+  width: auto;
+  height: auto;
+  top: 0% !important;
+  left: 100% !important;
+  opacity: 1; }
+
+/* line 847, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.simple.disabled.dropdown:hover .menu {
+  display: none;
+  height: 0px;
+  width: 0px;
+  overflow: hidden; }
+
+/* Visible */
+/* line 855, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.simple.visible.dropdown > .menu {
+  display: block; }
+
+/*--------------
+      Fluid
+---------------*/
+/* line 863, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.fluid.dropdown {
+  display: block;
+  width: 100%;
+  min-width: 0em; }
+
+/* line 868, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.fluid.dropdown > .dropdown.icon {
+  float: right; }
+
+/*--------------
+    Floating
+---------------*/
+/* line 876, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.floating.dropdown .menu {
+  left: 0;
+  right: auto;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 0.2857rem; }
+
+/* line 882, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.floating.dropdown > .menu {
+  margin-top: 0.5em !important; }
+
+/*--------------
+     Pointing
+---------------*/
+/* line 890, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.pointing.dropdown > .menu {
+  top: 100%;
+  margin-top: 0.75em;
+  border-radius: 0.2857rem; }
+
+/* line 895, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.pointing.dropdown > .menu:after {
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  content: '';
+  visibility: visible;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 0.5em;
+  height: 0.5em;
+  box-shadow: -1px -1px 0px 1px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  z-index: 2; }
+
+/* line 910, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.pointing.dropdown > .menu:after {
+  top: -0.25em;
+  left: 50%;
+  margin: 0em 0em 0em -0.25em; }
+
+/* Top Left Pointing */
+/* line 917, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.top.left.pointing.dropdown > .menu {
+  top: 100%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+  margin: 1em 0em 0em; }
+
+/* line 924, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.top.left.pointing.dropdown > .menu {
+  top: 100%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+  margin: 1em 0em 0em; }
+
+/* line 931, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.top.left.pointing.dropdown > .menu:after {
+  top: -0.25em;
+  left: 1em;
+  right: auto;
+  margin: 0em;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+/* Top Right  Pointing */
+/* line 942, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.top.right.pointing.dropdown > .menu {
+  top: 100%;
+  bottom: auto;
+  right: 0%;
+  left: auto;
+  margin: 1em 0em 0em; }
+
+/* line 949, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.top.right.pointing.dropdown > .menu:after {
+  top: -0.25em;
+  left: auto;
+  right: 1em;
+  margin: 0em;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+/* Left Pointing */
+/* line 960, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.left.pointing.dropdown > .menu {
+  top: 0%;
+  left: 100%;
+  right: auto;
+  margin: 0em 0em 0em 1em; }
+
+/* line 966, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.left.pointing.dropdown > .menu:after {
+  top: 1em;
+  left: -0.25em;
+  margin: 0em 0em 0em 0em;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+/* Right Pointing */
+/* line 976, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.right.pointing.dropdown > .menu {
+  top: 0%;
+  left: auto;
+  right: 100%;
+  margin: 0em 1em 0em 0em; }
+
+/* line 982, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.right.pointing.dropdown > .menu:after {
+  top: 1em;
+  left: auto;
+  right: -0.25em;
+  margin: 0em 0em 0em 0em;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg); }
+
+/* Bottom Pointing */
+/* line 993, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.bottom.pointing.dropdown > .menu {
+  top: auto;
+  bottom: 100%;
+  left: 0%;
+  right: auto;
+  margin: 0em 0em 1em; }
+
+/* line 1000, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.bottom.pointing.dropdown > .menu:after {
+  top: auto;
+  bottom: -0.25em;
+  right: auto;
+  margin: 0em;
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg); }
+
+/* Reverse Sub-Menu Direction */
+/* line 1011, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.bottom.pointing.dropdown > .menu .menu {
+  top: auto !important;
+  bottom: 0px !important; }
+
+/* Bottom Left */
+/* line 1017, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.bottom.left.pointing.dropdown > .menu {
+  left: 0%;
+  right: auto; }
+
+/* line 1021, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.bottom.left.pointing.dropdown > .menu:after {
+  left: 1em;
+  right: auto; }
+
+/* Bottom Right */
+/* line 1027, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.bottom.right.pointing.dropdown > .menu {
+  right: 0%;
+  left: auto; }
+
+/* line 1031, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.bottom.right.pointing.dropdown > .menu:after {
+  left: auto;
+  right: 1em; }
+
+/*******************************
+         Theme Overrides
+*******************************/
+/* Dropdown Carets */
+@font-face {
+  font-family: 'Dropdown';
+  src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMggjB5AAAAC8AAAAYGNtYXAPfuIIAAABHAAAAExnYXNwAAAAEAAAAWgAAAAIZ2x5Zjo82LgAAAFwAAABVGhlYWQAQ88bAAACxAAAADZoaGVhAwcB6QAAAvwAAAAkaG10eAS4ABIAAAMgAAAAIGxvY2EBNgDeAAADQAAAABJtYXhwAAoAFgAAA1QAAAAgbmFtZVcZpu4AAAN0AAABRXBvc3QAAwAAAAAEvAAAACAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADw2gHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIPDa//3//wAAAAAAIPDX//3//wAB/+MPLQADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAIABJQElABMAABM0NzY3BTYXFhUUDwEGJwYvASY1AAUGBwEACAUGBoAFCAcGgAUBEgcGBQEBAQcECQYHfwYBAQZ/BwYAAQAAAG4BJQESABMAADc0PwE2MzIfARYVFAcGIyEiJyY1AAWABgcIBYAGBgUI/wAHBgWABwaABQWABgcHBgUFBgcAAAABABIASQC3AW4AEwAANzQ/ATYXNhcWHQEUBwYnBi8BJjUSBoAFCAcFBgYFBwgFgAbbBwZ/BwEBBwQJ/wgEBwEBB38GBgAAAAABAAAASQClAW4AEwAANxE0NzYzMh8BFhUUDwEGIyInJjUABQYHCAWABgaABQgHBgVbAQAIBQYGgAUIBwWABgYFBwAAAAEAAAABAADZuaKOXw889QALAgAAAAAA0ABHWAAAAADQAEdYAAAAAAElAW4AAAAIAAIAAAAAAAAAAQAAAeD/4AAAAgAAAAAAASUAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAASUAAAElAAAAtwASALcAAAAAAAAACgAUAB4AQgBkAIgAqgAAAAEAAAAIABQAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAOAAAAAQAAAAAAAgAOAEcAAQAAAAAAAwAOACQAAQAAAAAABAAOAFUAAQAAAAAABQAWAA4AAQAAAAAABgAHADIAAQAAAAAACgA0AGMAAwABBAkAAQAOAAAAAwABBAkAAgAOAEcAAwABBAkAAwAOACQAAwABBAkABAAOAFUAAwABBAkABQAWAA4AAwABBAkABgAOADkAAwABBAkACgA0AGMAaQBjAG8AbQBvAG8AbgBWAGUAcgBzAGkAbwBuACAAMQAuADAAaQBjAG8AbQBvAG8Abmljb21vb24AaQBjAG8AbQBvAG8AbgBSAGUAZwB1AGwAYQByAGkAYwBvAG0AbwBvAG4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=) format("truetype"), url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAAVwAAoAAAAABSgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAAdkAAAHZLDXE/09TLzIAAALQAAAAYAAAAGAIIweQY21hcAAAAzAAAABMAAAATA9+4ghnYXNwAAADfAAAAAgAAAAIAAAAEGhlYWQAAAOEAAAANgAAADYAQ88baGhlYQAAA7wAAAAkAAAAJAMHAelobXR4AAAD4AAAACAAAAAgBLgAEm1heHAAAAQAAAAABgAAAAYACFAAbmFtZQAABAgAAAFFAAABRVcZpu5wb3N0AAAFUAAAACAAAAAgAAMAAAEABAQAAQEBCGljb21vb24AAQIAAQA6+BwC+BsD+BgEHgoAGVP/i4seCgAZU/+LiwwHi2v4lPh0BR0AAACIDx0AAACNER0AAAAJHQAAAdASAAkBAQgPERMWGyAlKmljb21vb25pY29tb29udTB1MXUyMHVGMEQ3dUYwRDh1RjBEOXVGMERBAAACAYkABgAIAgABAAQABwAKAA0AVgCfAOgBL/yUDvyUDvyUDvuUDvtvi/emFYuQjZCOjo+Pj42Qiwj3lIsFkIuQiY6Hj4iNhouGi4aJh4eHCPsU+xQFiIiGiYaLhouHjYeOCPsU9xQFiI+Jj4uQCA77b4v3FBWLkI2Pjo8I9xT3FAWPjo+NkIuQi5CJjogI9xT7FAWPh42Hi4aLhomHh4eIiIaJhosI+5SLBYaLh42HjoiPiY+LkAgO+92d928Vi5CNkI+OCPcU9xQFjo+QjZCLkIuPiY6Hj4iNhouGCIv7lAWLhomHh4iIh4eJhouGi4aNiI8I+xT3FAWHjomPi5AIDvvdi+YVi/eUBYuQjZCOjo+Pj42Qi5CLkImOhwj3FPsUBY+IjYaLhouGiYeHiAj7FPsUBYiHhomGi4aLh42Hj4iOiY+LkAgO+JQU+JQViwwKAAAAAAMCAAGQAAUAAAFMAWYAAABHAUwBZgAAAPUAGQCEAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA8NoB4P/g/+AB4AAgAAAAAQAAAAAAAAAAAAAAIAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABAA4AAAACgAIAAIAAgABACDw2v/9//8AAAAAACDw1//9//8AAf/jDy0AAwABAAAAAAAAAAAAAAABAAH//wAPAAEAAAABAAA5emozXw889QALAgAAAAAA0ABHWAAAAADQAEdYAAAAAAElAW4AAAAIAAIAAAAAAAAAAQAAAeD/4AAAAgAAAAAAASUAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAASUAAAElAAAAtwASALcAAAAAUAAACAAAAAAADgCuAAEAAAAAAAEADgAAAAEAAAAAAAIADgBHAAEAAAAAAAMADgAkAAEAAAAAAAQADgBVAAEAAAAAAAUAFgAOAAEAAAAAAAYABwAyAAEAAAAAAAoANABjAAMAAQQJAAEADgAAAAMAAQQJAAIADgBHAAMAAQQJAAMADgAkAAMAAQQJAAQADgBVAAMAAQQJAAUAFgAOAAMAAQQJAAYADgA5AAMAAQQJAAoANABjAGkAYwBvAG0AbwBvAG4AVgBlAHIAcwBpAG8AbgAgADEALgAwAGkAYwBvAG0AbwBvAG5pY29tb29uAGkAYwBvAG0AbwBvAG4AUgBlAGcAdQBsAGEAcgBpAGMAbwBtAG8AbwBuAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/* line 1049, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown > .dropdown.icon {
+  font-family: 'Dropdown';
+  line-height: 1;
+  height: 1em;
+  width: 1.23em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center; }
+
+/* line 1060, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown > .dropdown.icon {
+  width: auto; }
+
+/* line 1063, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown > .dropdown.icon:before {
+  content: '\f0d7'; }
+
+/* Sub Menu */
+/* line 1068, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .menu .item .dropdown.icon:before {
+  content: ""; }
+
+/* line 1071, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.dropdown .item .left.dropdown.icon:before,
+.ui.dropdown .left.menu .item .dropdown.icon:before {
+  content: ""; }
+
+/* Upward Dropdown */
+/* line 1077, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.upward.dropdown > .dropdown.icon:before {
+  content: "\f0d8"; }
+
+/* Vertical Menu Dropdown */
+/* line 1082, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dropdown.css */
+.ui.vertical.menu .dropdown.item > .dropdown.icon:before {
+  content: ""; }
+
+/* Icons for Reference
+.dropdown.down.icon {
+  content: "\f0d7";
+}
+.dropdown.up.icon {
+  content: "\f0d8";
+}
+.dropdown.left.icon {
+  content: "\f0d9";
+}
+.dropdown.icon.icon {
+  content: "\f0da";
+}
+*/
+/*******************************
+        User Overrides
+*******************************/
+/*!
+ * # Semantic UI 1.12.1 - Dimmer
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+/*******************************
+            Dimmer
+*******************************/
+/* line 18, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+.dimmable {
+  position: relative; }
+
+/* line 21, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+.ui.dimmer {
+  display: none;
+  position: absolute;
+  top: 0em !important;
+  left: 0em !important;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  background: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  line-height: 1;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  will-change: opacity;
+  z-index: 1000; }
+
+/* Dimmer Content */
+/* line 48, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+.ui.dimmer > .content {
+  width: 100%;
+  height: 100%;
+  display: table;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text; }
+
+/* line 57, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+.ui.dimmer > .content > div {
+  display: table-cell;
+  vertical-align: middle;
+  color: #ffffff; }
+
+/* Loose Coupling */
+/* line 64, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+.ui.segment > .ui.dimmer {
+  border-radius: inherit !important; }
+
+/*******************************
+            States
+*******************************/
+/* line 73, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+.animating.dimmable:not(body),
+.dimmed.dimmable:not(body) {
+  overflow: hidden; }
+
+/* line 77, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+.dimmed.dimmable > .ui.animating.dimmer,
+.dimmed.dimmable > .ui.visible.dimmer,
+.ui.active.dimmer {
+  display: block;
+  opacity: 1; }
+
+/* line 83, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+.ui.disabled.dimmer {
+  width: 0 !important;
+  height: 0 !important; }
+
+/*******************************
+           Variations
+*******************************/
+/*--------------
+      Page
+---------------*/
+/* line 98, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+.ui.page.dimmer {
+  position: fixed;
+  -webkit-transform-style: '';
+  transform-style: '';
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center; }
+
+/* line 108, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+body.animating.in.dimmable,
+body.dimmed.dimmable {
+  overflow: hidden; }
+
+/* line 112, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+body.dimmable > .dimmer {
+  position: fixed; }
+
+/*
+body.dimmable > :not(.dimmer) {
+  filter: @elementStartFilter;
+}
+body.dimmed.dimmable > :not(.dimmer) {
+  filter: @elementEndFilter;
+  transition: @elementTransition;
+}
+*/
+/*--------------
+    Aligned
+---------------*/
+/* line 129, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+.ui.dimmer > .top.aligned.content > * {
+  vertical-align: top; }
+
+/* line 132, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+.ui.dimmer > .bottom.aligned.content > * {
+  vertical-align: bottom; }
+
+/*--------------
+    Inverted
+---------------*/
+/* line 140, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+.ui.inverted.dimmer {
+  background: rgba(255, 255, 255, 0.85); }
+
+/* line 143, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+.ui.inverted.dimmer > .content > * {
+  color: #ffffff; }
+
+/*--------------
+     Simple
+---------------*/
+/* Displays without javascript */
+/* line 153, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+.ui.simple.dimmer {
+  display: block;
+  overflow: hidden;
+  opacity: 1;
+  width: 0%;
+  height: 0%;
+  z-index: -100;
+  background-color: transparent; }
+
+/* line 162, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+.dimmed.dimmable > .ui.simple.dimmer {
+  overflow: visible;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1; }
+
+/* line 170, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+.ui.simple.inverted.dimmer {
+  background: rgba(255, 255, 255, 0); }
+
+/* line 173, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/dimmer.css */
+.dimmed.dimmable > .ui.simple.inverted.dimmer {
+  background: rgba(255, 255, 255, 0.85); }
+
+/*******************************
+         Theme Overrides
+*******************************/
+/*******************************
+        User Overrides
+*******************************/
+/*!
+ * # Semantic UI 1.12.2 - Modal
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+/*******************************
+             Modal
+*******************************/
+/* line 18, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  top: 50%;
+  left: 50%;
+  text-align: left;
+  width: 90%;
+  margin-left: -45%;
+  background: #ffffff;
+  border: none;
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 0.2857rem;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  will-change: top, left, margin, transform, opacity; }
+
+/* line 37, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.modal > :first-child:not(.icon),
+.ui.modal > .icon:first-child + * {
+  border-top-left-radius: 0.2857rem;
+  border-top-right-radius: 0.2857rem; }
+
+/* line 42, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.modal > :last-child {
+  border-bottom-left-radius: 0.2857rem;
+  border-bottom-right-radius: 0.2857rem; }
+
+/*******************************
+            Content
+*******************************/
+/*--------------
+     Close
+---------------*/
+/* line 57, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  top: -2.5rem;
+  right: -2.5rem;
+  z-index: 1;
+  opacity: 0.8;
+  font-size: 1.25em;
+  color: #ffffff;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0.625rem 0rem 0rem 0rem; }
+
+/* line 70, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.modal > .close:hover {
+  opacity: 1; }
+
+/*--------------
+     Header
+---------------*/
+/* line 78, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.modal > .header {
+  display: block;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05)) #ffffff;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.05)) #ffffff;
+  margin: 0em;
+  padding: 1.2rem 2rem;
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+  font-size: 1.6em;
+  line-height: 1.3em;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.85);
+  border-bottom: 1px solid rgba(39, 41, 43, 0.15); }
+
+/*--------------
+     Content
+---------------*/
+/* line 97, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.modal > .content {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  font-size: 1em;
+  line-height: 1.4;
+  padding: 2rem;
+  background: #ffffff; }
+
+/* Image */
+/* line 108, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.modal > .content > .image {
+  display: table-cell;
+  width: '';
+  vertical-align: top; }
+
+/* line 113, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.modal > .content > .image[class*="top aligned"] {
+  vertical-align: top; }
+
+/* line 116, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.modal > .content > .image[class*="middle aligned"] {
+  vertical-align: middle; }
+
+/* Description */
+/* line 121, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.modal > .content > .description {
+  display: table-cell;
+  vertical-align: top; }
+
+/* line 125, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.modal > .content > .icon + .description,
+.ui.modal > .content > .image + .description {
+  min-width: '';
+  width: 80%;
+  padding-left: 2em; }
+
+/*rtl:ignore*/
+/* line 132, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.modal > .content > .image > i.icon {
+  font-size: 8rem;
+  margin: 0em;
+  opacity: 1;
+  width: auto; }
+
+/*--------------
+     Actions
+---------------*/
+/* line 143, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.modal .actions {
+  background: #efefef;
+  padding: 1rem 2rem;
+  border-top: 1px solid rgba(39, 41, 43, 0.15);
+  text-align: right; }
+
+/* line 149, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.modal .actions > .button {
+  margin-left: 0.75em; }
+
+/*-------------------
+       Responsive
+--------------------*/
+/* Modal Width */
+@media only screen and (max-width: 767px) {
+  /* line 160, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.modal {
+    width: 95%;
+    margin: 0em 0em 0em -47.5%; } }
+@media only screen and (min-width: 768px) {
+  /* line 166, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.modal {
+    width: 88%;
+    margin: 0em 0em 0em -44%; } }
+@media only screen and (min-width: 992px) {
+  /* line 172, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.modal {
+    width: 74%;
+    margin: 0em 0em 0em -37%; } }
+@media only screen and (min-width: 1400px) {
+  /* line 178, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.modal {
+    width: 56%;
+    margin: 0em 0em 0em -28%; } }
+@media only screen and (min-width: 1920px) {
+  /* line 184, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.modal {
+    width: 42%;
+    margin: 0em 0em 0em -21%; } }
+/* Tablet and Mobile */
+@media only screen and (max-width: 992px) {
+  /* line 192, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.modal > .header {
+    padding-right: 2.25rem; }
+
+  /* line 195, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.modal > .close {
+    top: 0.905rem;
+    right: 1rem;
+    color: rgba(0, 0, 0, 0.8); } }
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  /* line 204, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.modal > .header {
+    padding: 0.75rem 1rem !important;
+    padding-right: 2.25rem !important; }
+
+  /* line 208, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.modal > .content {
+    display: block;
+    padding: 1rem !important; }
+
+  /* line 212, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.modal > .close {
+    top: 0.5rem !important;
+    right: 0.5rem !important; }
+
+  /*rtl:ignore*/
+  /* line 217, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.modal .content > .image {
+    display: block;
+    max-width: 100%;
+    margin: 0em auto !important;
+    text-align: center;
+    padding: 0rem 0rem 1rem !important; }
+
+  /* line 224, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.modal > .content > .image > i.icon {
+    font-size: 5rem;
+    text-align: center; }
+
+  /*rtl:ignore*/
+  /* line 229, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.modal .content > .description {
+    display: block;
+    width: 100% !important;
+    margin: 0em !important;
+    padding: 1rem 0rem !important;
+    box-shadow: none; }
+
+  /* Let Buttons Stack */
+  /* line 238, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.modal > .actions {
+    padding: 1rem 1rem 0rem !important; }
+
+  /* line 241, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.modal .actions > .buttons,
+  .ui.modal .actions > .button {
+    margin-bottom: 1rem; } }
+/*******************************
+             Types
+*******************************/
+/* line 252, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.basic.modal {
+  background-color: transparent;
+  border: none;
+  border-radius: 0em;
+  box-shadow: 0px 0px 0px 0px;
+  color: #ffffff; }
+
+/* line 259, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.basic.modal > .header,
+.ui.basic.modal > .content,
+.ui.basic.modal > .actions {
+  background-color: transparent; }
+
+/* line 264, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.basic.modal > .header {
+  color: #ffffff; }
+
+/* line 267, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.basic.modal > .close {
+  top: 1rem;
+  right: 1.5rem; }
+
+/* Tablet and Mobile */
+@media only screen and (max-width: 992px) {
+  /* line 274, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.basic.modal > .close {
+    color: #ffffff; } }
+/*******************************
+            Variations
+*******************************/
+/* A modal that cannot fit on the page */
+/* line 286, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.scrolling.dimmable.dimmed {
+  overflow: hidden; }
+
+/* line 289, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.scrolling.dimmable.dimmed > .dimmer {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
+
+/* line 293, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.scrolling.dimmable > .dimmer {
+  position: fixed; }
+
+/* line 296, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.scrolling.modal {
+  position: static;
+  margin: 3.5rem auto !important; }
+
+@media only screen and (max-width: 992px) {
+  /* line 301, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.scrolling.modal {
+    margin-top: 1rem;
+    margin-bottom: 1rem; } }
+/*******************************
+             States
+*******************************/
+/* line 312, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.active.modal {
+  display: block; }
+
+/*******************************
+           Variations
+*******************************/
+/*--------------
+   Full Screen
+---------------*/
+/* line 326, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.fullscreen.modal {
+  width: 95% !important;
+  left: 2.5% !important;
+  margin: 1em auto; }
+
+/* line 331, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.fullscreen.scrolling.modal {
+  left: 0em !important; }
+
+/* line 334, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.fullscreen.modal > .header {
+  padding-right: 2.25rem; }
+
+/* line 337, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.fullscreen.modal > .close {
+  top: 0.905rem;
+  right: 1rem;
+  color: rgba(0, 0, 0, 0.8); }
+
+/*--------------
+      Size
+---------------*/
+/* line 347, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.modal {
+  font-size: 1rem; }
+
+/* Small */
+/* line 352, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.small.modal > .header {
+  font-size: 1.3em; }
+
+/* Small Modal Width */
+@media only screen and (max-width: 767px) {
+  /* line 358, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.small.modal {
+    width: 95%;
+    margin: 0em 0em 0em -47.5%; } }
+@media only screen and (min-width: 768px) {
+  /* line 364, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.small.modal {
+    width: 52.8%;
+    margin: 0em 0em 0em -26.4%; } }
+@media only screen and (min-width: 992px) {
+  /* line 370, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.small.modal {
+    width: 44.4%;
+    margin: 0em 0em 0em -22.2%; } }
+@media only screen and (min-width: 1400px) {
+  /* line 376, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.small.modal {
+    width: 33.6%;
+    margin: 0em 0em 0em -16.8%; } }
+@media only screen and (min-width: 1920px) {
+  /* line 382, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.small.modal {
+    width: 25.2%;
+    margin: 0em 0em 0em -12.6%; } }
+/* Large Modal Width */
+/* line 389, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+.ui.large.modal > .header {
+  font-size: 1.6em; }
+
+@media only screen and (max-width: 767px) {
+  /* line 393, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.large.modal {
+    width: 95%;
+    margin: 0em 0em 0em -47.5%; } }
+@media only screen and (min-width: 768px) {
+  /* line 399, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.large.modal {
+    width: 88%;
+    margin: 0em 0em 0em -44%; } }
+@media only screen and (min-width: 992px) {
+  /* line 405, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.large.modal {
+    width: 88.8%;
+    margin: 0em 0em 0em -44.4%; } }
+@media only screen and (min-width: 1400px) {
+  /* line 411, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.large.modal {
+    width: 67.2%;
+    margin: 0em 0em 0em -33.6%; } }
+@media only screen and (min-width: 1920px) {
+  /* line 417, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/modal.css */
+  .ui.large.modal {
+    width: 50.4%;
+    margin: 0em 0em 0em -25.2%; } }
+/*******************************
+         Theme Overrides
+*******************************/
+/*******************************
+         Site Overrides
+*******************************/
+/* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+.hero {
+  background: url("/images/hero-1.jpg") no-repeat;
+  background-size: cover;
+  min-height: 13.375rem;
+  height: 21.25rem;
+  width: 100%;
+  display: table;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out; }
+  @media screen and (min-width: 976px) {
+    /* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+    .hero {
+      height: auto;
+      min-height: 90vh; } }
+  /* line 12, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+  .hero article {
+    display: table-cell;
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: relative; }
+    @media screen and (min-width: 976px) {
+      /* line 12, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+      .hero article {
+        vertical-align: middle; } }
+    /* line 21, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+    .hero article > img {
+      max-width: 32.25rem;
+      width: 100%; }
+      @media screen and (min-width: 976px) {
+        /* line 21, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+        .hero article > img {
+          margin-bottom: 11.25rem; } }
+    /* line 26, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+    .hero article .ticker {
+      position: absolute;
+      bottom: 0; }
+
+/* line 30, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+.arrow-container {
+  display: none; }
+  @media screen and (min-width: 976px) {
+    /* line 30, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+    .arrow-container {
+      display: block;
+      position: absolute;
+      height: auto;
+      width: 100%;
+      left: -50%;
+      bottom: 10rem; }
+      /* line 39, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+      .arrow-container img {
+        width: 3.25rem;
+        height: 3.1875rem;
+        position: relative;
+        left: 50%; } }
+
+/* line 45, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+.ticker {
+  min-height: 5.25rem;
+  width: 100%;
+  background: white;
+  color: black;
+  display: table;
+  font-size: 0.875rem;
+  font-family: "Sentinel", serif;
+  font-weight: 700;
+  line-height: 1.125rem;
+  padding: 0 1.875rem; }
+  /* line 57, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+  .ticker span {
+    display: table-cell;
+    vertical-align: middle;
+    height: auto;
+    width: 100%; }
+  /* line 62, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+  .ticker a {
+    color: black;
+    display: inline-block;
+    margin-left: 0.3125rem; }
+
+/* line 68, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+.togo, .pdr, .catering, .dinner, .lunch, .brunch, .dessert, .happy-hour, .drink {
+  background: url("/images/russell-bg.jpg") no-repeat;
+  background-size: cover;
+  height: 13.375rem;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  background-position: 70% 100%;
+  background-size: cover; }
+  @media screen and (min-width: 976px) {
+    /* line 68, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+    .togo, .pdr, .catering, .dinner, .lunch, .brunch, .dessert, .happy-hour, .drink {
+      background-position: auto;
+      height: 48rem; } }
+  /* line 80, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+  .togo aside, .pdr aside, .catering aside, .dinner aside, .lunch aside, .brunch aside, .dessert aside, .happy-hour aside, .drink aside {
+    text-align: center;
+    padding: 1.875rem;
+    display: table;
+    width: 100%;
+    height: 13.375rem; }
+    @media screen and (min-width: 976px) {
+      /* line 80, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+      .togo aside, .pdr aside, .catering aside, .dinner aside, .lunch aside, .brunch aside, .dessert aside, .happy-hour aside, .drink aside {
+        text-align: left;
+        width: 26.875rem;
+        height: auto;
+        display: block;
+        height: auto; } }
+    /* line 92, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+    .togo aside img, .pdr aside img, .catering aside img, .dinner aside img, .lunch aside img, .brunch aside img, .dessert aside img, .happy-hour aside img, .drink aside img {
+      margin: 2.5rem auto;
+      height: 4.8125rem;
+      display: table-cell;
+      vertical-align: middle; }
+      @media screen and (min-width: 976px) {
+        /* line 92, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+        .togo aside img, .pdr aside img, .catering aside img, .dinner aside img, .lunch aside img, .brunch aside img, .dessert aside img, .happy-hour aside img, .drink aside img {
+          height: 14.6875rem;
+          margin: 1.875rem 0 0 0; } }
+  @media screen and (min-width: 976px) {
+    /* line 100, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+    .togo article, .pdr article, .catering article, .dinner article, .lunch article, .brunch article, .dessert article, .happy-hour article, .drink article {
+      box-sizing: border-box;
+      position: relative;
+      height: 28.75rem; } }
+  /* line 106, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+  .togo article .cta, .pdr article .cta, .catering article .cta, .dinner article .cta, .lunch article .cta, .brunch article .cta, .dessert article .cta, .happy-hour article .cta, .drink article .cta {
+    position: absolute;
+    bottom: -3.75rem;
+    margin-left: 15.625rem; }
+
+/* line 111, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+.private-dining {
+  background: url("/images/private-dining-bg.jpg") no-repeat;
+  position: relative;
+  background-size: cover;
+  height: 12.875rem; }
+  @media screen and (min-width: 976px) {
+    /* line 111, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+    .private-dining {
+      height: 48rem; } }
+  /* line 118, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+  .private-dining h2 {
+    font-size: 2.25rem;
+    margin: 0 auto;
+    line-height: normal;
+    padding: 0;
+    float: none;
+    vertical-align: middle;
+    text-align: center;
+    height: 12.9375rem;
+    display: table-cell; }
+    @media screen and (min-width: 976px) {
+      /* line 118, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+      .private-dining h2 {
+        text-align: left;
+        font-size: 7.5rem;
+        line-height: 7.375rem;
+        margin: 0;
+        float: right;
+        padding: 6.25rem 0 0 0;
+        height: auto;
+        display: block; } }
+  /* line 137, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+  .private-dining aside {
+    padding: 0;
+    display: table;
+    width: 100%;
+    height: 12.9375rem; }
+    /* line 15, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+    .private-dining aside:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media screen and (min-width: 976px) {
+      /* line 137, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+      .private-dining aside {
+        width: 100%;
+        height: auto;
+        padding: 0 1.875rem;
+        display: block; } }
+  @media screen and (min-width: 976px) {
+    /* line 148, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+    .private-dining article {
+      padding-left: 0; } }
+  /* line 151, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+  .private-dining article .cta {
+    position: absolute;
+    bottom: -6.25rem; }
+
+/* line 155, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+.cta {
+  background: white;
+  border-radius: 50%;
+  width: 24.75rem;
+  height: 24.75rem;
+  text-align: center;
+  display: block;
+  margin-left: none; }
+  @media screen and (min-width: 976px) {
+    /* line 155, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+    .cta {
+      display: table; } }
+  /* line 165, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+  .cta .content {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 3.125rem;
+    box-sizing: border-box; }
+    /* line 172, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+    .cta .content a {
+      font-size: 1rem;
+      font-family: "Gotham", sans-serif;
+      font-weight: 700;
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase; }
+
+/* line 181, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+.opentable {
+  background: #EFE5D3;
+  position: relative; }
+  /* line 184, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+  .opentable h2 {
+    margin: 0; }
+
+/* line 187, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+.right-caret {
+  display: inline-block;
+  background: url("/images/right-caret.png") no-repeat;
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-left: 0.3125rem;
+  background-size: contain; }
+
+/* line 196, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+.hide-large .cta {
+  width: 100%;
+  text-align: center;
+  border-radius: 0;
+  height: auto; }
+  /* line 201, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+  .hide-large .cta .content {
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 1.25rem; }
+@media screen and (min-width: 976px) {
+  /* line 195, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+  .hide-large {
+    display: none; } }
+
+/* line 208, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+.hide-small {
+  display: none; }
+  @media screen and (min-width: 976px) {
+    /* line 208, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+    .hide-small {
+      display: block; } }
+
+/* line 213, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_banners.css.sass */
+.text-right {
+  text-align: right; }
+
+/* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_button.css.sass */
+.button {
+  background-color: #F1AC31;
+  border: none;
+  border-radius: 0.1875rem;
+  text-transform: uppercase;
+  height: 2.625rem;
+  line-height: 2.625rem;
+  padding: 0 1.875rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem; }
+  /* line 17, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_button.css.sass */
+  .button.expand {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 0.625rem; }
+
+/* line 23, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_button.css.sass */
+.circle-btn {
+  border-radius: 50%;
+  background: white;
+  color: black;
+  display: inline-block;
+  width: 3.5625rem;
+  height: 3.5625rem;
+  line-height: 3.875rem;
+  text-align: center;
+  font-size: 1.75rem; }
+
+/* line 2, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_dropdown.css.sass */
+.ui.dropdown .menu {
+  background: black;
+  border: none;
+  border-radius: 0.1875rem;
+  padding: 0.625rem 1.25rem;
+  min-width: 10.25rem;
+  margin-top: 0.625rem;
+  right: 0;
+  left: auto; }
+  /* line 11, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_dropdown.css.sass */
+  .ui.dropdown .menu:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 0.3125rem solid transparent;
+    border-right: 0.3125rem solid transparent;
+    border-bottom: 0.3125rem solid black;
+    position: absolute;
+    right: 0.625rem;
+    top: -0.3125rem; }
+  /* line 21, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_dropdown.css.sass */
+  .ui.dropdown .menu .item {
+    padding: 0.625rem 0; }
+    /* line 15, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+    .ui.dropdown .menu .item:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 24, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_dropdown.css.sass */
+    .ui.dropdown .menu .item a {
+      color: #F1AC31;
+      line-height: normal;
+      height: auto;
+      display: block;
+      font-family: "Gotham";
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-transform: uppercase; }
+      /* line 34, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_dropdown.css.sass */
+      .ui.dropdown .menu .item a:hover {
+        color: white; }
+
+/* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+footer#footer {
+  background: #080609;
+  position: relative;
+  color: white;
+  padding: 1.875rem; }
+  @media screen and (min-width: 976px) {
+    /* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+    footer#footer {
+      padding: 6.25rem 1.875rem; } }
+  /* line 8, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+  footer#footer section {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.25rem;
+    line-height: 2.125rem; }
+    /* line 15, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+    footer#footer section:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media screen and (min-width: 976px) {
+      /* line 8, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+      footer#footer section {
+        font-size: 1.75rem; } }
+  @media screen and (min-width: 976px) {
+    /* line 15, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+    footer#footer article {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      /* line 38, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+      footer#footer article:last-child {
+        margin-right: 0; } }
+  /* line 18, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+  footer#footer article a {
+    color: white;
+    text-decoration: none;
+    display: inline-block; }
+    /* line 22, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+    footer#footer article a.circle-btn {
+      color: black; }
+  /* line 24, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+  footer#footer h4 {
+    color: #F1AC31; }
+  /* line 27, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+  footer#footer dl dt {
+    font-size: 0.875rem;
+    font-family: "Gotham", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase; }
+  /* line 33, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+  footer#footer dl dd {
+    margin: 0 0 1.875rem 0; }
+  /* line 35, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+  footer#footer dl a {
+    color: white;
+    text-decoration: none; }
+  /* line 38, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+  footer#footer .week {
+    display: inline-block;
+    width: 100%;
+    border: 0.125rem solid white;
+    max-width: 25rem;
+    padding: 1.5625rem 3.125rem;
+    box-sizing: border-box; }
+    /* line 46, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+    footer#footer .week dl dt, footer#footer .week dl dd {
+      display: inline-block; }
+    /* line 48, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+    footer#footer .week dl dt {
+      font-size: 1.25rem;
+      font-family: "Gotham", serif;
+      font-weight: 700;
+      text-align: right;
+      min-width: 8.0625rem; }
+    /* line 55, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+    footer#footer .week dl dd {
+      font-family: "Sentinel", serif;
+      font-size: 1.375rem;
+      font-weight: 300;
+      text-align: right;
+      margin: 0 0 0rem 1.875rem; }
+  /* line 63, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+  footer#footer figure {
+    max-width: 25rem;
+    height: auto;
+    border: 0.125rem solid white;
+    margin-top: 1.875rem; }
+    /* line 68, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+    footer#footer figure img {
+      width: 100%; }
+    /* line 70, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+    footer#footer figure.footer-logo {
+      border: none;
+      max-width: 21.5rem;
+      height: auto;
+      margin-top: 3.75rem; }
+  /* line 75, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_footer.css.sass */
+  footer#footer .circle-btn {
+    margin-right: 1.875rem; }
+
+/* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_forms.css.sass */
+input[type='submit'] {
+  background-color: #F1AC31;
+  border: none;
+  border-radius: 0.1875rem;
+  text-transform: uppercase;
+  height: 2.625rem;
+  padding: 0 1.875rem;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem; }
+
+/* line 15, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_forms.css.sass */
+input[type='text'], select {
+  border: none;
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: black;
+  height: 2.625rem;
+  padding-left: 0.625rem;
+  box-sizing: border-box;
+  border-radius: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0; }
+
+/* line 32, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_forms.css.sass */
+#mc_embed_signup ul.inline li {
+  vertical-align: middle; }
+/* line 34, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_forms.css.sass */
+#mc_embed_signup input[type='email'] {
+  padding-left: 1.25rem;
+  color: black;
+  height: 2.625rem;
+  font-size: 0.875rem;
+  font-family: "Gotham", sans-serif;
+  font-weight: 700; }
+
+/* line 2, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_logo.css.sass */
+.logo img {
+  width: 4.375rem;
+  height: 4.375rem; }
+
+/* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_menus.css.sass */
+table.menu {
+  border: 0.0625rem solid black; }
+  /* line 4, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_menus.css.sass */
+  table.menu thead th {
+    font-family: "Gotham", sans-serif;
+    font-size: 1.625rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 1.875rem 0 0.625rem 0.625rem;
+    border-bottom: 0.0625rem solid black; }
+    /* line 13, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_menus.css.sass */
+    table.menu thead th p {
+      font-size: 0.75rem;
+      font-family: "Sentinel", serif;
+      font-weight: 300;
+      margin: 0;
+      line-height: normal; }
+      /* line 20, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_menus.css.sass */
+      table.menu thead th p strong {
+        font-family: "Gotham", sans-serif;
+        font-weight: 700; }
+  /* line 26, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_menus.css.sass */
+  table.menu tbody tr td {
+    padding: 0.625rem 0.625rem;
+    border-bottom: 0.0625rem solid black;
+    font-size: 0.875rem; }
+    /* line 31, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_menus.css.sass */
+    table.menu tbody tr td.inverse {
+      background: black;
+      color: white; }
+    /* line 34, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_menus.css.sass */
+    table.menu tbody tr td:nth-of-type(2) {
+      border-left: 0.0625rem solid black;
+      vertical-align: top;
+      font-size: 0.875rem; }
+    /* line 39, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_menus.css.sass */
+    table.menu tbody tr td h5 {
+      font-family: "Gotham", sans-serif;
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      vertical-align: middle;
+      margin: 0;
+      line-height: normal; }
+      /* line 48, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_menus.css.sass */
+      table.menu tbody tr td h5 span {
+        vertical-align: middle;
+        background: black;
+        text-transform: uppercase;
+        color: white;
+        font-size: 0.625rem;
+        font-family: "Sentinel", serif;
+        font-weight: 300;
+        padding: 0.125rem; }
+    /* line 58, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_menus.css.sass */
+    table.menu tbody tr td p {
+      font-size: 0.75rem;
+      font-family: "Sentinel", serif;
+      font-weight: 300;
+      margin: 0;
+      line-height: normal; }
+  /* line 68, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_menus.css.sass */
+  table.menu.alt thead th p {
+    display: inline-block; }
+  /* line 73, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_menus.css.sass */
+  table.menu.alt tbody tr td h5, table.menu.alt tbody tr td p {
+    display: inline-block;
+    vertical-align: top; }
+  /* line 76, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_menus.css.sass */
+  table.menu.alt tbody tr td p {
+    margin-left: 0.625rem; }
+
+/* line 79, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_menus.css.sass */
+.stamp {
+  display: none; }
+  @media screen and (min-width: 976px) {
+    /* line 79, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_menus.css.sass */
+    .stamp {
+      display: block; } }
+
+/* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+nav {
+  background: white;
+  padding: 0.625rem;
+  box-sizing: border-box; }
+  /* line 5, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+  nav .wrapper {
+    display: table;
+    width: 100%;
+    padding: 0; }
+    @media screen and (min-width: 976px) {
+      /* line 5, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+      nav .wrapper {
+        display: block;
+        padding: 0; } }
+  /* line 12, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+  nav .logo, nav .hours {
+    display: table-cell;
+    vertical-align: middle;
+    width: 33%; }
+  /* line 16, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+  nav .logo {
+    margin-right: 3.125rem; }
+  /* line 18, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+  nav ul {
+    display: none; }
+    @media screen and (min-width: 976px) {
+      /* line 18, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+      nav ul {
+        display: inline-block; } }
+    /* line 22, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+    nav ul li {
+      display: inline-block;
+      text-transform: uppercase;
+      margin-right: 3.125rem; }
+      /* line 26, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+      nav ul li a {
+        font-family: "Gotham", sans-serif;
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: black;
+        text-decoration: none;
+        height: 4.375rem;
+        line-height: 4.375rem; }
+      /* line 35, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+      nav ul li span {
+        line-height: normal;
+        font-family: "Gotham", sans-serif;
+        font-weight: 700;
+        font-size: 0.875rem;
+        color: black;
+        text-decoration: none; }
+  @media screen and (min-width: 976px) {
+    /* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+    nav {
+      padding: 0.625rem 0;
+      display: block; }
+      /* line 46, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+      nav .logo, nav .hours {
+        display: inline-block;
+        width: auto; } }
+
+/* line 50, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+.hours {
+  border: none;
+  text-align: center;
+  padding: 0.3125rem 0.5rem;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  font-family: "Gotham", sans-serif;
+  font-weight: 700; }
+  /* line 61, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+  .hours span {
+    display: none;
+    font-size: 0.8125rem;
+    font-family: "Sentinel", serif;
+    font-weight: 300;
+    text-transform: none; }
+    /* line 68, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+    .hours span.show-time {
+      display: block; }
+  @media screen and (min-width: 976px) {
+    /* line 50, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+    .hours {
+      border: 0.125rem solid black; } }
+
+/* line 73, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+.info {
+  font-size: 1.375rem;
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  margin-left: 3.125rem;
+  display: none; }
+  /* line 80, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+  .info a {
+    font-size: 0.75rem;
+    font-family: "Sentinel", serif;
+    font-weight: 300;
+    display: block;
+    text-decoration: none;
+    color: black; }
+  @media screen and (min-width: 976px) {
+    /* line 73, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+    .info {
+      display: inline-block;
+      vertical-align: middle; } }
+
+/* line 92, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+.collapse-menu {
+  color: black;
+  font-size: 2rem;
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle; }
+  @media screen and (min-width: 976px) {
+    /* line 92, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+    .collapse-menu {
+      display: none; } }
+
+/* line 101, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+.mobile-nav {
+  display: block; }
+  /* line 103, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+  .mobile-nav a {
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.875rem;
+    font-weight: 700;
+    font-family: "Gotham", sans-serif;
+    margin-bottom: 1.25rem; }
+    /* line 115, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+    .mobile-nav a:hover {
+      color: white; }
+
+/* line 118, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_nav.css.sass */
+.ui.basic.modal > .close {
+  top: -3.75rem !important; }
+
+/* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+#OT_partySizeLbl, #OT_dateLbl, #OT_timeLbl {
+  font-size: 0.875rem;
+  font-family: "Gotham";
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  vertical-align: middle; }
+
+/* line 10, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+h2.OT_feedTitle, p#dateDisplay {
+  display: none !important; }
+
+/* line 13, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+#OT_partySize, #OT_date, #OT_time {
+  top: 1.125rem !important; }
+
+/* line 16, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+#OT_dateLbl {
+  left: 10.3125rem !important; }
+
+/* line 19, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+#OT_timeLbl {
+  left: 21.9375rem !important; }
+
+/* line 22, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+#OT_time {
+  left: 26.1875rem !important; }
+
+/* line 25, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+#OT_date {
+  left: 14.625rem !important; }
+
+/* line 28, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+input[type='submit'].OT_TableButton {
+  position: absolute;
+  top: -0.3125rem;
+  background: black;
+  border-radius: 0.125rem;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 0.75rem;
+  height: 2.625rem;
+  line-height: 2.625rem;
+  cursor: pointer;
+  width: 10.625rem;
+  left: 1.875rem; }
+
+/* line 42, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+#OT_searchWrapperAll {
+  width: 43.125rem !important;
+  margin: 3.125rem auto 0 auto !important; }
+
+/* line 46, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+#OT_searchWrapper #startDate, #OT_searchWrapper .OT_feedFormfieldCalendar {
+  width: 6.6875rem !important; }
+
+/* line 49, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+.opentable {
+  position: relative;
+  height: auto;
+  display: table;
+  width: 100%;
+  padding: 1.25rem 0; }
+  @media screen and (min-width: 976px) {
+    /* line 49, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+    .opentable {
+      height: 19.75rem;
+      padding: 0; } }
+  /* line 58, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+  .opentable article {
+    display: none;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%; }
+    @media screen and (min-width: 976px) {
+      /* line 58, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+      .opentable article {
+        display: table-cell; } }
+  /* line 65, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+  .opentable p {
+    text-align: center;
+    position: relative;
+    z-index: 1; }
+  /* line 69, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+  .opentable h2 {
+    position: absolute;
+    top: 30px;
+    left: 290px;
+    z-index: 0; }
+  /* line 74, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+  .opentable .hide-large {
+    text-align: center; }
+    /* line 76, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+    .opentable .hide-large a {
+      color: black;
+      text-decoration: none;
+      display: block;
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      font-family: "Gotham";
+      font-weight: 700; }
+
+/* line 87, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+#OT_submitWrap input[type=IMAGE] {
+  margin-left: 1.875rem; }
+
+/* line 90, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_opentable.css.sass */
+#OT_searchWrapper .feedFormField, #OT_searchWrapper .feedFormField option {
+  padding: 0 0.625rem; }
+
+/* line 2, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_thumbnails.css.sass */
+.thumbs .thumb {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 8.5rem;
+  height: 8.5rem; }
+  @media screen and (min-width: 976px) {
+    /* line 2, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_thumbnails.css.sass */
+    .thumbs .thumb {
+      width: 18.125rem;
+      height: 18.125rem; } }
+  /* line 11, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_thumbnails.css.sass */
+  .thumbs .thumb:hover img {
+    border-color: black; }
+  /* line 13, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_thumbnails.css.sass */
+  .thumbs .thumb span {
+    display: block;
+    font-size: 1.875rem;
+    font-family: "Sentinel", serif;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    line-height: 8.5rem;
+    text-align: center;
+    width: 100%; }
+    @media screen and (min-width: 976px) {
+      /* line 13, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_thumbnails.css.sass */
+      .thumbs .thumb span {
+        font-size: 4.25rem;
+        line-height: 18.125rem; } }
+  /* line 28, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_thumbnails.css.sass */
+  .thumbs .thumb img {
+    width: 100%;
+    height: auto;
+    border: 0.125rem solid white;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+
+/* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_typography.css.sass */
+ul, dl {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  /* line 6, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_typography.css.sass */
+  ul.inline li, dl.inline li {
+    display: inline-block; }
+
+/* line 9, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_typography.css.sass */
+h1 {
+  font-size: 4rem;
+  font-family: "Sentinel", serif;
+  font-weight: 300;
+  color: black;
+  line-height: 4.8125rem; }
+
+/* line 17, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_typography.css.sass */
+h2 {
+  color: white;
+  font-family: "Gotham";
+  font-size: 9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: normal; }
+
+/* line 26, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_typography.css.sass */
+h3 {
+  text-transform: uppercase;
+  font-family: "Gotham", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.625rem; }
+
+/* line 35, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_typography.css.sass */
+h4 {
+  text-transform: uppercase;
+  font-family: "Sentinel", serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 2rem; }
+  @media screen and (min-width: 976px) {
+    /* line 35, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_typography.css.sass */
+    h4 {
+      font-size: 1.6875rem; } }
+
+/* line 45, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/components/_typography.css.sass */
+h5 {
+  font-size: 1.5rem;
+  font-family: "Gotham", sans-serif;
+  font-weight: 700; }
+
+/* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/index.css.sass */
+.menus {
+  background: #EFE5D3;
+  padding: 1.875rem 0;
+  box-sizing: border-box; }
+  /* line 15, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .menus:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 976px) {
+    /* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/index.css.sass */
+    .menus {
+      padding: 7.5rem 0; } }
+  /* line 8, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/index.css.sass */
+  .menus h2 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 45px;
+    text-align: center; }
+    @media screen and (min-width: 976px) {
+      /* line 8, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/index.css.sass */
+      .menus h2 {
+        margin: 0;
+        padding: 0px 0 30px 108px;
+        box-sizing: border-box;
+        font-size: 144px;
+        text-align: left; } }
+  /* line 20, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/index.css.sass */
+  .menus aside {
+    display: none; }
+    @media screen and (min-width: 976px) {
+      /* line 20, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/index.css.sass */
+      .menus aside {
+        display: block;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%; }
+        /* line 38, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+        .menus aside:last-child {
+          margin-right: 0; } }
+  @media screen and (min-width: 976px) {
+    /* line 25, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/index.css.sass */
+    .menus article {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 74.41059%; }
+      /* line 38, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .menus article:last-child {
+        margin-right: 0; } }
+  /* line 28, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/index.css.sass */
+  .menus article .thumbs {
+    margin-top: 0px;
+    min-width: 100%;
+    text-align: center; }
+    @media screen and (min-width: 976px) {
+      /* line 28, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/index.css.sass */
+      .menus article .thumbs {
+        margin-top: -100px; } }
+    /* line 34, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/index.css.sass */
+    .menus article .thumbs .thumb {
+      margin: 10px; }
+      @media screen and (min-width: 976px) {
+        /* line 34, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/index.css.sass */
+        .menus article .thumbs .thumb {
+          margin: 10px 20px 20px 0; } }
+
+/* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+.about {
+  background: url("/images/about-bg.jpg") no-repeat;
+  position: relative;
+  background-size: cover;
+  max-height: 38.25rem;
+  width: 100%; }
+  /* line 7, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+  .about .cta {
+    display: none; }
+    @media screen and (min-width: 976px) {
+      /* line 7, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+      .about .cta {
+        display: block; } }
+  /* line 11, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+  .about h2 {
+    font-size: 3.75rem;
+    margin: 0;
+    line-height: 7.375rem;
+    padding: 1.875rem 0;
+    float: left; }
+    @media screen and (min-width: 976px) {
+      /* line 11, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+      .about h2 {
+        font-size: 7.5rem;
+        padding: 6.25rem 0 0 0; } }
+  @media screen and (min-width: 976px) {
+    /* line 20, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+    .about aside {
+      width: 100%;
+      height: auto; }
+      /* line 15, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+      .about aside:after {
+        content: "";
+        display: table;
+        clear: both; } }
+  /* line 15, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .about article:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 976px) {
+    /* line 25, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+    .about article {
+      padding-left: 0; }
+      /* line 29, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+      .about article .cta {
+        background: #EFE5D3;
+        float: right;
+        bottom: -5rem;
+        position: relative; }
+        /* line 34, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+        .about article .cta .content {
+          padding: 3.75rem;
+          box-sizing: border-box;
+          vertical-align: top; } }
+
+/* line 39, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+.main-content {
+  background: white;
+  position: relative;
+  padding: 1.875rem 0; }
+  @media screen and (min-width: 976px) {
+    /* line 39, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+    .main-content {
+      padding: 5rem 0; } }
+  /* line 45, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+  .main-content article {
+    height: 100%; }
+    @media screen and (min-width: 976px) {
+      /* line 45, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+      .main-content article {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        box-sizing: border-box; }
+        /* line 38, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+        .main-content article:last-child {
+          margin-right: 0; } }
+    /* line 51, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+    .main-content article h1 {
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 1; }
+      @media screen and (min-width: 976px) {
+        /* line 51, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+        .main-content article h1 {
+          font-size: 4rem;
+          line-height: auto; } }
+    /* line 59, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+    .main-content article h5 {
+      margin-bottom: 0.3125rem; }
+    /* line 61, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+    .main-content article small {
+      font-size: 1.125rem; }
+      /* line 63, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+      .main-content article small i {
+        display: block;
+        font-family: "sbold", serif; }
+      /* line 66, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+      .main-content article small a {
+        color: #F1AC31;
+        text-decoration: none; }
+    /* line 70, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+    .main-content article p a {
+      color: #F1AC31;
+      text-decoration: none; }
+    /* line 15, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+    .main-content article ul:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 75, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+    .main-content article ul li {
+      margin-right: 0; }
+      @media screen and (min-width: 976px) {
+        /* line 75, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+        .main-content article ul li {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%;
+          margin-right: 0; }
+          /* line 38, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+          .main-content article ul li:last-child {
+            margin-right: 0; } }
+  /* line 80, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+  .main-content aside {
+    border: 0.125rem solid black;
+    padding: 1.875rem;
+    box-sizing: border-box;
+    margin: 1.875rem 0; }
+    @media screen and (min-width: 976px) {
+      /* line 80, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+      .main-content aside {
+        margin: 0; } }
+    /* line 88, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+    .main-content aside p a {
+      color: #F1AC31;
+      text-decoration: none; }
+    /* line 91, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+    .main-content aside h3 {
+      margin: 0 0 1.25rem 0;
+      font-family: "gbold", sans-serif;
+      font-size: 2.25rem;
+      line-height: 2.625rem; }
+    /* line 97, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+    .main-content aside dl {
+      margin-bottom: 1.875rem; }
+      /* line 99, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+      .main-content aside dl dt {
+        font-family: "sbold"; }
+      /* line 102, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+      .main-content aside dl dd {
+        margin: 0 0 0 1.25rem;
+        display: list-item;
+        list-style: disc; }
+    @media screen and (min-width: 976px) {
+      /* line 80, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/about.css.sass */
+      .main-content aside {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        /* line 38, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+        .main-content aside:last-child {
+          margin-right: 0; } }
+
+/* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/pdr.css.sass */
+.pdr {
+  background: url("/images/private-dining-bg.jpg") no-repeat;
+  position: relative;
+  background-size: cover;
+  max-height: 38.25rem;
+  width: 100%; }
+  /* line 8, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/pdr.css.sass */
+  .pdr h2 {
+    font-size: 3.75rem;
+    margin: 0;
+    line-height: 3.75rem;
+    padding: 1.875rem 0;
+    float: left;
+    text-align: left; }
+    @media screen and (min-width: 976px) {
+      /* line 8, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/pdr.css.sass */
+      .pdr h2 {
+        font-size: 7.5rem;
+        padding: 6.25rem 0 0 0;
+        line-height: 7.375rem; } }
+
+/* line 21, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/pdr.css.sass */
+.instagram .circle-btn {
+  background: #F1AC31;
+  color: white;
+  margin-right: 0.9375rem; }
+/* line 25, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/pdr.css.sass */
+.instagram p {
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 3.5625rem;
+  color: black;
+  text-transform: uppercase;
+  width: auto;
+  margin-bottom: 1.875rem; }
+  /* line 35, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/pdr.css.sass */
+  .instagram p a {
+    color: #F1AC31;
+    text-decoration: none; }
+
+/* line 40, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/pdr.css.sass */
+#instafeed a {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-right: 0;
+  padding: 0 0.625rem;
+  margin-bottom: 0.9375rem; }
+  /* line 38, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+  #instafeed a:last-child {
+    margin-right: 0; }
+  /* line 45, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/pdr.css.sass */
+  #instafeed a img {
+    width: 100%; }
+
+/* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/catering.css.sass */
+.catering {
+  background: url("/images/catering-bg.jpg") no-repeat;
+  position: relative;
+  background-size: cover;
+  max-height: 38.25rem;
+  width: 100%; }
+  /* line 8, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/catering.css.sass */
+  .catering h2 {
+    font-size: 7.5rem;
+    margin: 0;
+    line-height: 7.375rem;
+    padding: 6.25rem 0 0 0;
+    float: left; }
+  /* line 14, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/catering.css.sass */
+  .catering article {
+    padding-left: 0; }
+
+/* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+.dinner, .lunch, .brunch, .dessert, .happy-hour, .drink {
+  background: url("/images/dinner-bg.jpg") no-repeat;
+  position: relative;
+  background-size: cover;
+  max-height: 38.25rem;
+  width: 100%; }
+  /* line 8, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+  .dinner h2, .lunch h2, .brunch h2, .dessert h2, .happy-hour h2, .drink h2 {
+    font-size: 3.75rem;
+    margin: 0;
+    line-height: 3.75rem;
+    padding: 1.875rem 0;
+    float: left;
+    text-align: left; }
+    @media screen and (min-width: 976px) {
+      /* line 8, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+      .dinner h2, .lunch h2, .brunch h2, .dessert h2, .happy-hour h2, .drink h2 {
+        font-size: 7.5rem;
+        padding: 6.25rem 0 0 0;
+        line-height: 7.375rem; } }
+  /* line 19, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+  .dinner article, .lunch article, .brunch article, .dessert article, .happy-hour article, .drink article {
+    position: relative; }
+    @media screen and (min-width: 976px) {
+      /* line 19, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+      .dinner article, .lunch article, .brunch article, .dessert article, .happy-hour article, .drink article {
+        padding-left: 0; }
+        /* line 23, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+        .dinner article .cta, .lunch article .cta, .brunch article .cta, .dessert article .cta, .happy-hour article .cta, .drink article .cta {
+          right: 0;
+          background: #EFE5D3; }
+          /* line 26, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+          .dinner article .cta .content, .lunch article .cta .content, .brunch article .cta .content, .dessert article .cta .content, .happy-hour article .cta .content, .drink article .cta .content {
+            padding: 3.75rem;
+            box-sizing: border-box;
+            vertical-align: top; }
+        /* line 30, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+        .dinner article figure, .lunch article figure, .brunch article figure, .dessert article figure, .happy-hour article figure, .drink article figure {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%; }
+          /* line 38, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+          .dinner article figure:last-child, .lunch article figure:last-child, .brunch article figure:last-child, .dessert article figure:last-child, .happy-hour article figure:last-child, .drink article figure:last-child {
+            margin-right: 0; }
+          /* line 32, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+          .dinner article figure:nth-of-type(2), .lunch article figure:nth-of-type(2), .brunch article figure:nth-of-type(2), .dessert article figure:nth-of-type(2), .happy-hour article figure:nth-of-type(2), .drink article figure:nth-of-type(2) {
+            padding-left: 0.625rem; }
+        /* line 34, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+        .dinner article .stamp, .lunch article .stamp, .brunch article .stamp, .dessert article .stamp, .happy-hour article .stamp, .drink article .stamp {
+          width: 16.6875rem;
+          height: 16.75rem;
+          position: absolute;
+          bottom: 0;
+          right: -6.25rem;
+          top: 710px;
+          z-index: 0; } }
+  /* line 42, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+  .dinner .menu, .lunch .menu, .brunch .menu, .dessert .menu, .happy-hour .menu, .drink .menu {
+    margin-bottom: 1.875rem;
+    width: 100%;
+    position: relative;
+    z-index: 1; }
+  /* line 47, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+  .dinner aside, .lunch aside, .brunch aside, .dessert aside, .happy-hour aside, .drink aside {
+    border: none;
+    padding: 0; }
+
+/* line 51, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+.lunch {
+  background: url("/images/lunch-bg.jpg") no-repeat;
+  position: relative;
+  background-size: cover;
+  max-height: 38.25rem;
+  width: 100%; }
+
+/* line 58, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+.brunch {
+  background: url("/images/brunch-bg.jpg") no-repeat;
+  position: relative;
+  background-size: cover;
+  max-height: 38.25rem;
+  width: 100%; }
+
+/* line 65, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+.dessert {
+  background: url("/images/dessert-bg.jpg") no-repeat;
+  position: relative;
+  background-size: cover;
+  max-height: 38.25rem;
+  width: 100%; }
+
+/* line 72, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+.happy-hour {
+  background: url("/images/happy-hour-bg.jpg") no-repeat;
+  position: relative;
+  background-size: cover;
+  max-height: 38.25rem;
+  width: 100%; }
+
+/* line 79, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+.drink {
+  background: url("/images/drink-bg.jpg") no-repeat;
+  position: relative;
+  background-size: cover;
+  max-height: 38.25rem;
+  width: 100%; }
+
+/* line 86, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+.menu-nav {
+  padding: 0;
+  margin-right: 0; }
+  @media screen and (min-width: 976px) {
+    /* line 86, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+    .menu-nav {
+      margin-right: -1.875rem;
+      float: right; } }
+  /* line 92, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+  .menu-nav ul {
+    margin: 0; }
+    /* line 94, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+    .menu-nav ul li {
+      display: block; }
+      /* line 15, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+      .menu-nav ul li:after {
+        content: "";
+        display: table;
+        clear: both; }
+      /* line 97, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+      .menu-nav ul li a {
+        font-family: "Sentinel";
+        font-weight: 700;
+        font-size: 3rem;
+        height: auto;
+        text-transform: none;
+        display: inline-block;
+        color: white;
+        width: 100%;
+        padding: 1.25rem 2.5rem;
+        box-sizing: border-box;
+        background: #908D87;
+        line-height: normal;
+        border-bottom: 0.0625rem solid white;
+        position: relative; }
+        /* line 113, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+        .menu-nav ul li a:hover {
+          background: black;
+          color: white; }
+        /* line 116, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+        .menu-nav ul li a.active {
+          background: black; }
+          /* line 118, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+          .menu-nav ul li a.active:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 3.0625rem solid transparent;
+            border-bottom: 3.0625rem solid transparent;
+            border-right: 1.875rem solid black;
+            display: block;
+            position: absolute;
+            left: -1.875rem;
+            top: 0; }
+
+/* line 131, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+.all-menus header {
+  margin-bottom: 1.875rem; }
+  /* line 133, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+  .all-menus header a {
+    color: black;
+    background: white;
+    display: inline-block;
+    line-height: 2.8125rem;
+    border-radius: 62.5rem;
+    text-align: center;
+    padding: 0 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 1.25rem;
+    font-size: 1.125rem;
+    font-family: "Gotham";
+    font-weight: 700; }
+    /* line 148, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/menus.css.sass */
+    .all-menus header a.active, .all-menus header a:hover {
+      background: #F1AC31; }
+
+/* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/togo.css.sass */
+.togo-banner {
+  background: url("/images/togo-banner-bg.jpg") no-repeat;
+  position: relative;
+  background-size: cover;
+  max-height: 38.25rem;
+  width: 100%; }
+  /* line 7, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/togo.css.sass */
+  .togo-banner h2 {
+    font-size: 7.5rem;
+    margin: 0;
+    line-height: 7.375rem;
+    padding: 6.25rem 0 0 0;
+    float: left; }
+  @media screen and (min-width: 976px) {
+    /* line 13, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/togo.css.sass */
+    .togo-banner aside {
+      width: 100%;
+      height: auto; }
+      /* line 15, /Users/daniloquilaton/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+      .togo-banner aside:after {
+        content: "";
+        display: table;
+        clear: both; } }
+  @media screen and (min-width: 976px) {
+    /* line 18, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/togo.css.sass */
+    .togo-banner article {
+      padding-left: 0; }
+      /* line 21, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/togo.css.sass */
+      .togo-banner article .cta {
+        right: 0;
+        background: #EFE5D3; }
+        /* line 24, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/togo.css.sass */
+        .togo-banner article .cta .content {
+          padding: 3.75rem;
+          box-sizing: border-box;
+          vertical-align: top; } }
+
+/* line 1, /Users/daniloquilaton/code/tavernasanmarco.github.io/source/stylesheets/pages/giftcards.css.sass */
+.gift-cards {
+  background: url("/images/gift-cards-bg.jpg") no-repeat;
+  position: relative;
+  background-size: cover;
+  height: 33rem;
+  min-height: 100%;
+  width: 100%; }
